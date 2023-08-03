@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay">
+        <div class="container">
+            <h2 class="fables-page-title fables-second-border-color">Ma'muriyat</h2>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="fables-light-gary-background">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">Asosiy</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Ma'muriyat</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /End Breadcrumbs -->
+
+    <!-- Start page content -->
+    <div class="container">
+        <div class="row my-4 my-md-5">
+            <div class="col-12 col-lg-6">
+                <div class="fables-single-slider store-single-slider">
+                    <div id="sync1" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="{{ director.image.url }}" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-12 col-lg-6 mt-3 mt-lg-0">
+                <h2 class="fables-main-text-color font-30 semi-font text-center">
+                    {{ director.name }}
+                </h2>
+                <hr>
+                <h3 class="fables-main-text-color font-16 semi-font">
+                    {{ director.position }}
+                </h3>
+                <h3 class="fables-forth-text-color font-15 my-3">
+                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after px-3 px-md-5 font-15 semi-font border-0 active rounded-0 py-3"
+                       id="nav-desc-tab" data-toggle="tab" href="#nav-desc" role="tab" aria-controls="nav-desc"
+                       aria-selected="true">Qisqa Tarjimai Hol</a>
+                    <br>
+                    {{ director.content|safe }}
+                </h3>
+                <div class="row">
+                    <div class="col-6 col-sm-8 col-lg-7 col-xl-8 text-center mt-0 mt-sm-0 pl-0">
+                        <ul class="nav fables-single-social mt-2 justify-content-end justify-content-lg-start">
+
+                            <li>
+                                <a href="#" target="_blank"
+                                   class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                    <i class="fab fables-iconmobileApp-icon fa-fw"></i>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_blank"
+                                   class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                    <i class="fab fa-facebook-f fa-fw"></i>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_blank"
+                                   class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                    <i class="fab fa-twitter fa-fw"></i>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"
+                                   class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                    <i class="fab fa-instagram fa-fw"></i>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"
+                                   class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                    <i class="fab fa-linkedin fa-fw"></i>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"
+                                   class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                    <i class="fab fa-telegram fa-fw"></i>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav class="fables-single-nav">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+
+                </div>
+            </div>
+        </div>
+        <div class="row mb-0 mb-md-5">
+            <div class="col-12">
+                <h2 class="fables-forth-text-color fables-light-background-color my-3 my-md-5 py-3 text-center font-35 semi-font">
+                    Zamdirektorlar
+                </h2>
+            </div>
+
+            <div class="row">
+                {% for zamdirector in zamdirectors %}
+                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-lg-5">
+                        <div class="image-container zoomIn-effect">
+                            <a href="#">
+                                <img src="{{ zamdirector.image.url }}" alt="alt image text">
+                            </a>
+                        </div>
+                        <h2 class="mt-3 mb-2 font-18 semi-font">
+                            <a href="#" class="fables-main-text-color fables-second-hover-color text-center">
+                                {{ zamdirector.name }}
+                            </a>
+                        </h2>
+                        <h2 class="mt-3 mb-2 font-18 semi-font">
+                            <a href="#" class="fables-main-text-color fables-second-hover-color">
+                                {{ zamdirector.position }}
+                            </a>
+                        </h2>
+
+                        <p class="fables-forth-text-color font-14 mb-2">
+                            {{ zamdirector.content|safe }}
+                        </p>
+                        <div class="row">
+                            <div class="col-6 col-sm-8 col-lg-7 col-xl-8 text-center mt-0 mt-sm-0 pl-0">
+                                <ul class="nav fables-single-social mt-2 justify-content-end justify-content-lg-start">
+
+                                    <li>
+                                        <a href="#" target="_blank"
+                                           class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                            <i class="fab fables-iconmobileApp-icon fa-fw"></i>
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank"
+                                           class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                            <i class="fab fa-facebook-f fa-fw"></i>
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" target="_blank"
+                                           class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                            <i class="fab fa-twitter fa-fw"></i>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"
+                                           class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                            <i class="fab fa-instagram fa-fw"></i>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"
+                                           class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                            <i class="fab fa-linkedin fa-fw"></i>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"
+                                           class="fables-forth-text-color fables-single-link fables-second-hover-color">
+                                            <i class="fab fa-telegram fa-fw"></i>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /End page content -->
+
+
+{% endblock %}
+

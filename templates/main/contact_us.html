@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay">
+        <div class="container">
+            <h2 class="fables-page-title fables-second-border-color">Biz bilan bog'lanish</h2>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="fables-light-background-color">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+                    <li class="breadcrumb-item"><a href="/" class="fables-second-text-color">Asosiy</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Biz bilan bog'lanish</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /End Breadcrumbs -->
+
+
+    <!-- Start page content -->
+    <div class="container">
+        <div class="row my-4 my-md-5 overflow-hidden">
+            <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s"
+                 data-wow-delay=".4s">
+                <span class="fables-iconmap-icon fa-2x fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">Manzil Ma'lumotlari</h2>
+                <p class="font-14 fables-forth-text-color">
+                    Toshkent, Yashnobod tumani, Sultonali Mashhadiy koʻchasi, 217/2</p>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s"
+                 data-wow-delay=".8s">
+                <span class="fables-iconphone fa-2x  fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">Mail & Telefon Nomer</h2>
+                <p class="font-14 fables-forth-text-color">adminsupport@litsey.tsdi.com</p>
+                <p class="font-14 fables-forth-text-color">+998 71 235 32 45</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s"
+                 data-wow-delay="1.2s">
+                <span class="fables-iconshare-icon fa-2x fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">Ijtimoiy tarmoqlarda</h2>
+                <ul class="nav fables-contact-social-links">
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f fables-forth-text-color fa-fw"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram fables-forth-text-color  fa-fw"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter fables-forth-text-color    fa-fw"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin fables-forth-text-color   fa-fw"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fables-contact-caption fables-after-overlay px-2 px-sm-5 text-left text-sm-center py-5 bg-rules">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <h3 class="font-25 font-weight-bold white-color position-relative z-index">We are the best business
+                        consulting company ever!!</h3>
+                    <p class="font-weight-light fables-third-text-color my-3 position-relative z-index">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Aenean ac lorem pretium laoreet enim at, malesuada
+                        Class aptent taciti sociosqu.</p>
+                    <a href="#"
+                       class="btn fables-second-background-color fables-rounded-btn white-color fables-btn-rounded font-19 px-5 mt-2 position-relative z-index">know
+                        more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row my-4 my-md-5">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h3 class="font-35 font-weight-bold fables-second-text-color text-center mb-3">Contact Us</h3>
+                <p class="fables-forth-text-color text-center">It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal </p>
+
+            </div>
+        </div>
+        <div class="row overflow-hidden">
+            <div class="col-12 wow slideInLeft" data-wow-duration="1.5s">
+                <form class="fables-contact-form" method="post" action="{% url 'main:contact_us' %}">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="first_name" class="form-control p-3 rounded-0" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="last_name" class="form-control p-3 rounded-0" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="email" name="email" class="form-control p-3 rounded-0" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="subject" class="form-control p-3 rounded-0" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control p-3 rounded-0" name="message" placeholder="Message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12 text-center">
+                            <button type="submit"
+                                    class="btn fables-second-background-color fables-btn-rounded white-color px-7 font-20 py-2">
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- /End page content -->
+
+
+
+{% endblock %}

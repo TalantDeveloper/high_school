@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+
+
+    <!-- Start Breadcrumbs -->
+    <div class="fables-light-background-color">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">
+                        Asosiy
+                    </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Yangiliklar
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /End Breadcrumbs -->
+
+    <!-- Start page content -->
+    <div class="container">
+        <div class="my-4 my-lg-4">
+            <div class="owl-carousel owl-theme default-carousel nav-0 single-blog">
+                <div>
+                    <a href="{{ new.image.url }}" target="_blank">
+                        <img src="{{ new.image.url }}" alt="" class="w-100">
+                    </a>
+                </div>
+                <div>
+                    <a href="{{ new.image.url }}" target="_blank">
+                        <img src="{{ new.image.url }}" alt="" class="w-100">
+                    </a>
+                </div>
+                <div>
+                    <a href="{{ new.image.url }}" target="_blank">
+                        <img src="{{ new.image.url }}" alt="" class="w-100">
+                    </a>
+                </div>
+            </div>
+            <h2 class="font-23 semi-font">
+                <a href="{% url 'main:new' new.id %}" class="fables-main-text-color fables-second-hover-color">
+                {{ new.title }}
+            </a></h2>
+            <div class="fables-forth-text-color fables-blog-date">
+                <div class="row">
+                    <div class="col-12 col-md-9 col-lg-10 pt-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> {{ new.create_at }} </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href="" class="fables-forth-text-color fables-second-hover-color position-relative z-index">
+                            2
+                        </a>
+
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 text-right mt-3 mt-md-0 text-center text-md-right">
+                        <button class="btn btn-link fables-fifth-border-color fables-forth-hover-backround-color fables-forth-text-color "
+                                onclick="window.print();"><span class="fables-iconprint"></span> Chop Etish
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="fables-forth-text-color font-14 my-4">
+                {{ new.content |safe }}
+            </p>
+        </div>
+
+        <div class="row overflow-hidden">
+            <div class="col-12 col-md-7 col-lg-8 wow fadeInRight" data-wow-delay=".8s">
+
+            </div>
+        </div>
+
+        <div class="my-4 my-lg-5">
+            <h2 class="fables-main-text-color text-center underline my-4 font-25 semi-font mb-5">Boshqa yangiliklar</h2>
+            <div class="owl-carousel owl-theme fables-main-dots carousel-items-4 mb-0 mb-lg-5">
+                {% for all_new in news %}
+                    <div>
+                        <div class="image-container zoomIn-effect">
+                            <a href="{% url 'main:new' all_new.id %}">
+                                <img src="{{ all_new.image.url }}" alt="" class="w-100">
+                            </a>
+                        </div>
+                        <div class="fables-forth-text-color font-14  my-2">
+                            <span class="fables-icondata fables-second-text-color mr-1"></span>
+                            <span class="mr-3"> {{ all_new.create_at }} </span>
+                            <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                            <a href=""
+                               class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                        </div>
+                        <h2 class="font-18 semi-font">
+                            <a href="{% url 'main:new' all_new.id %}" class="fables-main-text-color fables-second-hover-color">
+                                {{ all_new.title|slice:75 }}
+                            </a>
+                        </h2>
+                        <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">
+                            Read More
+                            <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                {% endfor %}
+
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="{% static 'assets/custom/images/blog-cat1.jpg' %}" alt=""
+                                         class="w-100"></a>
+                    </div>
+                    <div class="fables-forth-text-color font-14  my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font">
+                        <a href="#" class="fables-main-text-color fables-second-hover-color">
+                            Getting to Another Level of Design
+                        </a>
+                    </h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat2.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat3.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat4.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat1.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat2.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat3.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <div class="image-container zoomIn-effect">
+                        <a href="#"><img src="assets/custom/images/blog-cat4.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="fables-forth-text-color font-14 my-2">
+                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                        <span class="mr-3"> 09 November, 2018 </span>
+                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <a href=""
+                           class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                    </div>
+                    <h2 class="font-18 semi-font"><a href="#" class="fables-main-text-color fables-second-hover-color">Getting
+                        to Another Level of Design</a></h2>
+                    <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">Read More
+                        <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /End page content -->
+
+
+{% endblock %}
+
+{{ new.content | safe }}

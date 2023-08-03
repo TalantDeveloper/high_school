@@ -1,0 +1,13 @@
+
+
+sudo apt install nginx
+sudo apt install -y python3-venv
+python3 -m venv django_env
+source django_env/bin/activate
+pip install -r requirements.txt
+pip install gunicorn
+mkdir conf
+nano conf/gunicorn_config.py
+
+
+gunicorn --bind ip_address:8000 high_school.wsgi

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="easy comment" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/High-school" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SL2XJWU7I4ldf1taNTdhicnavI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/works/turar_joy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\works\high_school\static" />
+      <recent name="C:\Users\user\works\high_school\locate\en" />
+      <recent name="C:\Users\user\works\high_school\locate\ru" />
+      <recent name="C:\Users\user\works\high_school\locate\uz" />
+      <recent name="C:\Users\user\works\high_school\static\css\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\works\high_school\static\ckeditor\ckeditor" />
+      <recent name="C:\Users\user\works\high_school\media\director" />
+      <recent name="C:\Users\user\works\high_school\static\css" />
+      <recent name="C:\Users\user\works\high_school\static\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="high_school" type="Python.DjangoServer" factoryName="Django server">
+      <module name="high_school" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="" />
+      <created>1688911579247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688911579247</updated>
+      <workItem from="1688911591352" duration="4024000" />
+      <workItem from="1688923021714" duration="8762000" />
+      <workItem from="1688973667358" duration="4009000" />
+      <workItem from="1688981171973" duration="3672000" />
+      <workItem from="1688986376621" duration="6265000" />
+      <workItem from="1688996024123" duration="422000" />
+      <workItem from="1689008360555" duration="706000" />
+      <workItem from="1689052354946" duration="4335000" />
+      <workItem from="1689154391024" duration="615000" />
+      <workItem from="1689217244450" duration="913000" />
+      <workItem from="1689312210499" duration="1537000" />
+      <workItem from="1689407808940" duration="2234000" />
+      <workItem from="1689411564534" duration="100000" />
+      <workItem from="1689413203710" duration="2453000" />
+      <workItem from="1689502623715" duration="12035000" />
+      <workItem from="1689571226678" duration="7941000" />
+      <workItem from="1689598342807" duration="1480000" />
+      <workItem from="1689662103534" duration="5283000" />
+      <workItem from="1689672043976" duration="4946000" />
+      <workItem from="1689744197325" duration="154000" />
+      <workItem from="1689746901196" duration="808000" />
+      <workItem from="1690897999844" duration="227000" />
+      <workItem from="1690964352313" duration="905000" />
+    </task>
+    <task id="LOCAL-00001" summary="asdf">
+      <created>1688984832314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688984832314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="comments translation">
+      <created>1688993637615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688993637616</updated>
+    </task>
+    <task id="LOCAL-00003" summary="comments translation .">
+      <created>1688993817170</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688993817170</updated>
+    </task>
+    <task id="LOCAL-00004" summary="easy comment">
+      <created>1689520332974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689520332974</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdf" />
+    <MESSAGE value="comments translation" />
+    <MESSAGE value="comments translation ." />
+    <MESSAGE value="easy comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="easy comment" />
+  </component>
+</project>

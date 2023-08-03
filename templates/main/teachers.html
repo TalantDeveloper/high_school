@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay">
+        <div class="container">
+            <h2 class="fables-page-title fables-second-border-color">Ustozlar</h2>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="fables-light-gary-background">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">Asosiy</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Ustozlar</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /End Breadcrumbs -->
+
+
+    <div class="container py-3 py-lg-5">
+        <div class="fables-team my-3">
+            <h3 class="fables-second-text-color mb-5 font-weight-bold"> Ustozlar </h3>
+
+            <div class="row">
+                {% for teacher in teachers %}
+                    <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                        <div class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+                            <div class="image-container shine-effect">
+                                <a href="{{ teacher.image.url }}" target="_blank">
+                                    <img class="w-100" src="{{ teacher.image.url }}" alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5>
+                                    <a href="#"
+                                       class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">
+                                        {{ teacher.name }}
+                                    </a>
+                                </h5>
+                                <p class="font-13 fables-forth-text-color my-1">
+                                    {{ teacher.position }}
+                                </p>
+                                <ul class="nav fables-team-social-links">
+                                    <li><a href="#" target="_blank"><span
+                                            class="fables-icongoogle-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                    </li>
+                                    <li><a href="#" target="_blank"><span
+                                            class="fables-iconwhatapp-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                    </li>
+                                    <li><a href="#" target="_blank"><span
+                                            class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                    </li>
+                                    <li><a href="#" target="_blank"><span
+                                            class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+
+                <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                    <div class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+                        <div class="image-container shine-effect">
+                            <a href="#"><img class="w-100" src="{% static 'assets/custom/images/team3-2.jpg' %}" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5><a href="#"
+                                   class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">JOHN
+                                MARTIN</a></h5>
+                            <p class="font-13 fables-forth-text-color my-1">Programmer</p>
+                            <ul class="nav fables-team-social-links">
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-icongoogle-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-iconwhatapp-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                    <div class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+                        <div class="image-container shine-effect">
+                            <a href="#"><img class="w-100" src="{% static 'assets/custom/images/team3-1.jpg' %}" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5><a href="#"
+                                   class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">JOHN
+                                MARTIN</a></h5>
+                            <p class="font-13 fables-forth-text-color my-1">Programmer</p>
+                            <ul class="nav fables-team-social-links">
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-icongoogle-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-iconwhatapp-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-lg-5">
+                    <div class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
+                        <div class="image-container shine-effect">
+                            <a href="#"><img class="w-100" src="{% static 'assets/custom/images/team3-2.jpg' %}" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5><a href="#"
+                                   class="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name">JOHN
+                                MARTIN</a></h5>
+                            <p class="font-13 fables-forth-text-color my-1">Programmer</p>
+                            <ul class="nav fables-team-social-links">
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-icongoogle-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-iconwhatapp-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                                <li><a href="#" target="_blank"><span
+                                        class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}

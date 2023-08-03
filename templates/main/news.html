@@ -1,0 +1,527 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+    <!-- Start Header -->
+    <div class="fables-header fables-after-overlay">
+        <div class="container">
+            <h2 class="fables-page-title fables-second-border-color">Akademik Litsey Yangiliklari</h2>
+        </div>
+    </div>
+    <!-- /End Header -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="fables-light-gary-background">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+                    <li class="breadcrumb-item"><a href="#" class="fables-second-text-color">Asosiy</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Akademik Litsey Yangiliklari</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /End Breadcrumbs -->
+
+    <!-- Start page content -->
+    <div class="container">
+        <div class="row my-4 my-md-5">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="fables-store-search mb-4">
+                    <form method="get" action="{% url 'main:news' %}">
+                        {% csrf_token %}
+                        <div class="input-icon">
+                            <span class="fables-iconsearch-icon fables-input-icon"></span>
+                            <input type="text"
+                                   class="form-control rounded-0 form-control rounded-0 font-14 fables-store-input pl-5 py-2"
+                                   placeholder="Search Product">
+                        </div>
+                    </form>
+                </div>
+
+                <h2 class="font-16 semi-font fables-forth-text-color fables-light-gary-background  p-3 my-4">
+                    So'ngi yangililar
+                </h2>
+                {% for news_order in news_orders %}
+                    <div class="row mb-3">
+                        <div class="col-4 pr-0">
+                            <a href="{% url 'main:new' news_order.id %}">
+                                <img src="{{ news_order.image.url }}" alt="" class="w-100">
+                            </a>
+                        </div>
+                        <div class="col-8">
+                            <a href="{% url 'main:new' news_order.id %}"
+                               class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">
+                                {{ news_order.title |slice:34 }}
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml1.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml2.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml3.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml4.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml1.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml2.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml3.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                        <a href="#"><img src="{% static 'assets/custom/images/sml4.jpg' %}" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"
+                           class="fables-main-text-color font-14 semi-font fables-second-hover-color store-card-text">LUIS
+                            LEATHER DRIVING MOCCASINS FROM ... </a>
+                        <p class="font-weight-bold fables-second-text-color ">$ 98.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="row mb-4">
+
+                    <div class="col-4 col-md-6 col-lg-2 offset-lg-6 text-center pl-0 d-none d-lg-block">
+                        <span class="fables-iconlist fa-fw fables-view-btn fables-list-btn fables-third-border-color fables-third-text-color"></span>
+                        <span class="fables-icongrid active fa-fw fables-view-btn fables-grid-btn fables-third-border-color fables-third-text-color"></span>
+                    </div>
+                </div>
+                <div class="row">
+
+                    {% for new in news %}
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{{ new.image.url }}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">
+                                        <a href="{% url 'main:new' new.id %}"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">
+                                            {{ new.title |slice:68 }}
+                                        </a>
+                                    </p>
+                                    <p class="fables-product-info">
+                                        <a href="{% url 'main:new' new.id %}" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-btn-value">To'liq ko'rish</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product2.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product3.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product4.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product5.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product6.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product7.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product8.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <div class="card rounded-0 mb-4">
+                            <div class="row">
+                                <div class="fables-product-img col-12">
+                                    <img class="card-img-top rounded-0"
+                                         src="{% static 'assets/custom/images/product9.jpg' %}"
+                                         alt="dress fashion">
+                                    <div class="fables-img-overlay">
+                                        <ul class="nav fables-product-btns">
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconeye"></span></a></li>
+                                            <li><a href="" class="fables-product-btn"><span
+                                                    class="fables-iconcompare"></span></a></li>
+                                            <li>
+                                                <button class="fables-product-btn"><span
+                                                        class="fables-iconheart"></span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body col-12">
+                                    <h5 class="card-title mx-xl-3">
+                                        <a href="#"
+                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">dress
+                                            fashion</a>
+                                    </h5>
+                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">LUIS LEATHER
+                                        DRIVING MOCCASINS FROM ... DOUBLE</p>
+                                    <p class="font-15 font-weight-bold fables-second-text-color my-2 mx-xl-3">$
+                                        98.00</p>
+                                    <p class="fables-product-info"><a href="#"
+                                                                      class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                        <span class="fables-iconcart"></span>
+                                        <span class="fables-btn-value">ADD TO CART</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a
+                                class="page-link rounded-circle fables-forth-text-color fables-page-link fables-second-hover-background-color"
+                                href="#">1</a></li>
+                        <li class="page-item"><a
+                                class="page-link rounded-circle fables-forth-text-color fables-page-link fables-second-hover-background-color"
+                                href="#">2</a></li>
+                        <li class="page-item"><a
+                                class="page-link rounded-circle fables-forth-text-color fables-page-link fables-page-link fables-second-hover-background-color"
+                                href="#">3</a></li>
+                        <li><span class="fables-pagi-dots fables-forth-text-color"> .... </span></li>
+                        <li class="page-item"><a
+                                class="page-link rounded-circle fables-forth-text-color fables-page-link fables-second-hover-background-color"
+                                href="#">20</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <!-- /End page content -->
+
+{% endblock %}
