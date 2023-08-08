@@ -1,6 +1,4 @@
 {% load i18n %}
-
-
 {% load static %}
 
 <!DOCTYPE html>
@@ -87,12 +85,15 @@
                     </button>
                     <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown"
                          aria-labelledby="dropdownLangButton">
-                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                            <img src="{% static 'assets/custom/images/england.png' %}" alt="england flag" class="mr-1">
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/uz/">
+                            <img src="{% static 'assets/custom/images/flag/uzbek.jpg' %}" alt="england flag" class="mr-1" width="20" height="10">
+                            O'zbek</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/en/">
+                            <img src="{% static 'assets/custom/images/flag/england.png' %}" alt="england flag" class="mr-1">
                             English</a>
-                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                            <img src="{% static 'assets/custom/images/France.png' %}" alt="england flag" class="mr-1">
-                            French</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/ru/">
+                            <img src="{% static 'assets/custom/images/flag/russian.jpg' %}" alt="england flag" class="mr-1" width="20" height="10">
+                            Russian</a>
                     </div>
                 </div>
 
@@ -119,8 +120,9 @@
             <div class="col-12 col-md-10 col-lg-9 pr-md-0">
                 <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
-                    <a class="navbar-brand pl-0" href="/"><img src="{% static 'assets/custom/images/fables-logo.png' %}"
-                                                               alt="Fables Template" class="fables-logo"></a>
+                    <a class="navbar-brand pl-0" href="/">
+                        <img src="{% static '/images/logo.png' %}" alt="Fables Template" class="fables-logo" width="50">
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown"
                             aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fables-iconmenu-icon text-white font-16"></span>
@@ -337,68 +339,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
 
-                <div class="fables-header-icons">
-                    <div class="dropdown">
-                        <a href="#"
-                           class="fables-third-text-color dropdown-toggle right px-3 px-md-2 px-lg-4 fables-second-hover-color top-header-link max-line-height position-relative"
-                           id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fables-iconcart-icon font-20"></span>
-                            <span class="fables-cart-number fables-second-background-color text-center">3</span>
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <div class="p-3 cart-block">
-                                <p class="fables-second-text-color semi-font mb-4 font-17">(2) Items in my cart</p>
-                                <div class="row mx-0 mb-3">
-                                    <div class="col-4 p-0">
-                                        <a href="#"><img src="{% static 'assets/custom/images/sml1.jpg' %}" alt=""
-                                                         class="w-100"></a>
-                                    </div>
-                                    <div class="col-8">
-                                        <h2><a href="#"
-                                               class="fables-main-text-color font-13 d-block fables-main-hover-color">LUIS
-                                            LEATHER DRIVING</a></h2>
-                                        <p class="fables-second-text-color font-weight-bold">$ 100.00</p>
-                                        <p class="fables-forth-text-color">QTY : 1</p>
-                                    </div>
-                                </div>
-                                <div class="row mx-0 mb-3">
-                                    <div class="col-4 p-0">
-                                        <a href="#"><img src="{% static 'assets/custom/images/sml1.jpg' %}" alt=""
-                                                         class="w-100"></a>
-                                    </div>
-                                    <div class="col-8">
-                                        <h2><a href="#"
-                                               class="fables-main-text-color font-13 d-block fables-main-hover-color">LUIS
-                                            LEATHER DRIVING</a></h2>
-                                        <p class="fables-second-text-color font-weight-bold">$ 100.00</p>
-                                        <p class="fables-forth-text-color">QTY : 1</p>
-                                    </div>
-                                </div>
-                                <span class="font-16 semi-font fables-main-text-color">TOTAL</span>
-                                <span class="font-14 semi-font fables-second-text-color float-right">$200.00</span>
-                                <hr>
-                                <div class="text-center">
-                                    <a href="#"
-                                       class="fables-second-background-color fables-btn-rounded  text-center white-color py-2 px-3 font-14 bg-hover-transparent border fables-second-border-color fables-second-hover-color">View
-                                        my cart</a>
-                                    <a href="#"
-                                       class="fables-second-text-color border fables-second-border-color fables-btn-rounded text-center white-color p-2 px-4 font-14 fables-second-hover-background-color">Checkout</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#"
-                       class="open-search fables-third-text-color right  top-header-link px-3 px-md-2 px-lg-4 fables-second-hover-color border-0 max-line-height">
-                        <span class="fables-iconsearch-icon"></span>
-                    </a>
-                    <a href="#"
-                       class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height"><span
-                            class="fables-iconuser"></span></a>
-                </div>
-            </div>
         </div>
     </div>
 </div>
