@@ -387,12 +387,6 @@
                                                         {{ director.position }}
                                                     </p>
 
-                                                    <p class="fables-product-info my-2">
-                                                        <a href="{% url 'main:direktors' %}"
-                                                           class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-15">
-
-                                                            <span class="fables-btn-value">BATAFSIL O'QISH</span></a>
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -400,7 +394,7 @@
                                 {% endfor %}
                                 <a href="{% url 'main:direktors' %}" class="btn white-color font-18 all-index-products fables-second-hover-color border-0 p-0
                                        position-absolute d-block pt-4 pt-md-0 z-index ">
-                                    <span class="underline">To'liq ko'rish</span>
+                                    <span class="underline">{% trans "To'liq ko'rish" %}</span>
                                     <span class="fables-iconarrow-light ml-2 font-13"></span>
                                 </a>
                             </div>
@@ -416,8 +410,8 @@
     <div class="container">
         <div class="row overflow-hidden">
             <div class="col-12">
-                <h2 class="font-35 bold-font fables-second-text-color mb-4 mb-md-5">Eng So'ngi <span
-                        class="fables-main-text-color">Yangiliklar</span></h2>
+                <h2 class="font-35 bold-font fables-second-text-color mb-4 mb-md-5">{% trans "Eng So'ngi" %} <span
+                        class="fables-main-text-color">{% trans "Yangiliklar" %}</span></h2>
             </div>
             {% for new in news %}
 
@@ -430,10 +424,11 @@
 
                     <div class="py-2 fables-fifth-text-color float-left w-100 d-md-none d-lg-block">
                         <div class="float-left font-13">
-                            <span class="fables-iconcalender"></span> December 27, 2017
+                            <span class="fables-iconcalender"></span>
+                            {{ new.create_at | date:"d F Y" }}
                         </div>
                         <div class="float-right font-13">
-                            <span class="fables-iconnews"></span> Latest News
+                            <span class="fables-iconnews"></span> {% trans "So'ngi yangilik" %}
                         </div>
                     </div>
                     <br>
@@ -443,7 +438,7 @@
                     </p>
                     <a href="{% url 'main:new' new.id %}"
                        class="btn fables-second-text-color fables-main-hover-color p-0">
-                        <span class="underline">To'liq o'qish</span>
+                        <span class="underline">{% trans "Batafsil" %}</span>
                         <span class="fables-iconarrow-light ml-2"></span>
                     </a>
                 </div>
@@ -453,7 +448,9 @@
         </div>
         <a href="{% url 'main:news' %}"
            class="btn fables-second-background-color white-color white-color-hover fables-btn-rounded  mt-4 py-2 px-5 position-relative z-index">
-            Boshqa yangiliklar
+            {% trans "Boshqa yangiliklar" %}
+            <span class="fables-iconarrow-light ml-2"></span>
+
         </a>
     </div>
     <!-- End   Latest Blog -->

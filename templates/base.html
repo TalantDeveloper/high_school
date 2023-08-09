@@ -81,30 +81,36 @@
                     <button class="btn btn-secondary dropdown-toggle border-0 bg-transparent font-13 lang-dropdown-btn pl-0"
                             type="button" id="dropdownLangButton" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                        language
+                        Language: {% trans "O'zbek" %}
                     </button>
                     <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown"
                          aria-labelledby="dropdownLangButton">
                         <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/uz/">
-                            <img src="{% static 'assets/custom/images/flag/uzbek.jpg' %}" alt="england flag" class="mr-1" width="20" height="10">
-                            O'zbek</a>
+                            <img src="{% static 'assets/custom/images/flag/uzbek.jpg' %}" alt="england flag"
+                                 class="mr-1" width="20" height="10">
+                            {% trans "O'zbek" %}
+                        </a>
                         <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/en/">
-                            <img src="{% static 'assets/custom/images/flag/england.png' %}" alt="england flag" class="mr-1">
-                            English</a>
+                            <img src="{% static 'assets/custom/images/flag/england.png' %}" alt="england flag"
+                                 class="mr-1">
+                            {% trans "English" %}
+                        </a>
                         <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/ru/">
-                            <img src="{% static 'assets/custom/images/flag/russian.jpg' %}" alt="england flag" class="mr-1" width="20" height="10">
-                            Russian</a>
+                            <img src="{% static 'assets/custom/images/flag/russian.jpg' %}" alt="england flag"
+                                 class="mr-1" width="20" height="10">
+                            {% trans "Russian" %}
+                        </a>
                     </div>
                 </div>
 
             </div>
             <div class="col-12 col-sm-5 col-lg-4 text-right">
-                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone : (888) 6000
+                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> {% trans "Telefon" %} : (888) 6000
                     6000 - (888) 6000 6000</p>
             </div>
             <div class="col-12 col-sm-5 col-lg-3 text-right">
                 <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email:
-                    Design@domain.com</p>
+                    stomalitsey@gmail.com</p>
             </div>
 
         </div>
@@ -133,145 +139,154 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="sub-nav1" data-toggle="dropdown"
                                    aria-haspopup="true" aria-expanded="false">
-                                    Litsey
+                                    {% trans "Akademik litsey" %}
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="sub-nav1">
-                                    <li><a class="dropdown-item" href="{% url 'main:direktors' %}">Ma'muriyat</a></li>
-                                    <li><a class="dropdown-item" href="#">Ilmiy hayot</a></li>
-                                    <li><a class="dropdown-item" href="#">Ijtimoiy hayot</a></li>
-                                    <li><a class="dropdown-item" href="{% url 'main:about' %}">Litsey haqida</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'main:direktors' %}">{% trans "Ma'muriyat" %}</a></li>
+                                    <li><a class="dropdown-item" href="#">{% trans "Ilmiy hayot" %}</a></li>
+                                    <li><a class="dropdown-item" href="#">{% trans "Ijtimoiy hayot" %}</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'main:about' %}">{% trans "Litsey haqida" %}</a></li>
                                 </ul>
                             </li>
+
                             <!--
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav2" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Features
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="sub-nav2">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav2" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                                    Features
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="sub-nav2">
 
-                                    <li><a class="dropdown-item dropdown-toggle" href="#">Headers</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 1</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Header
-                                                        1 Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 1
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 1
-                                                        Dark</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header Mega
-                                                        menu</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 2</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Header
-                                                        2 Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 2
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 2
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 3</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Header
-                                                        3 Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 3
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 3
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 4</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Header
-                                                        4 Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 4
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 4
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 5</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Header
-                                                        5 Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 5
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Header 5
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
+                                                    <li><a class="dropdown-item dropdown-toggle" href="#">Headers</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 1</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Header
+                                                                        1 Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 1
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 1
+                                                                        Dark</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header Mega
+                                                                        menu</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 2</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Header
+                                                                        2 Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 2
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 2
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 3</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Header
+                                                                        3 Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 3
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 3
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 4</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Header
+                                                                        4 Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 4
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 4
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 5</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Header
+                                                                        5 Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 5
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Header 5
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
 
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item dropdown-toggle" href="#">Footers</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 1</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Footer 1
-                                                        Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 1
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 1
-                                                        Dark</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="dropdown-item dropdown-toggle" href="#">Footers</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 1</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Footer 1
+                                                                        Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 1
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 1
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 2</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Footer 2
+                                                                        Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 2
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 2
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 3</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Footer 3
+                                                                        Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 3
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 3
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 4</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Footer 4
+                                                                        Transparent</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 4
+                                                                        Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Footer 4
+                                                                        Dark</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Team Members</a></li>
+                                                    <li><a class="dropdown-item" href="#">Pricing Table</a></li>
+                                                    <li><a class="dropdown-item" href="#">testimonials</a></li>
+                                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                                    <li><a class="dropdown-item" href="#">Counters</a></li>
+                                                    <li><a class="dropdown-item" href="#">Image Hover Effects</a>
+                                                    </li>
                                                 </ul>
                                             </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 2</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Footer 2
-                                                        Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 2
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 2
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 3</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Footer 3
-                                                        Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 3
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 3
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 4</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Footer 4
-                                                        Transparent</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 4
-                                                        Light</a></li>
-                                                    <li><a class="dropdown-item" href="#">Footer 4
-                                                        Dark</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Team Members</a></li>
-                                    <li><a class="dropdown-item" href="#">Pricing Table</a></li>
-                                    <li><a class="dropdown-item" href="#">testimonials</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog</a></li>
-                                    <li><a class="dropdown-item" href="#">Counters</a></li>
-                                    <li><a class="dropdown-item" href="#">Image Hover Effects</a>
-                                    </li>
-                                </ul>
-                            </li>
                             -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav3" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    About
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="sub-nav3">
-                                    <li><a class="dropdown-item" href="#">About 1</a></li>
-                                    <li><a class="dropdown-item" href="#">About 2</a></li>
-                                    <li><a class="dropdown-item" href="#">About 3</a></li>
-                                </ul>
-                            </li>
+
+                            <!--
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav3" data-toggle="dropdown"
+                                                               aria-haspopup="true" aria-expanded="false">
+                                                                About
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="sub-nav3">
+                                                                <li><a class="dropdown-item" href="#">About 1</a></li>
+                                                                <li><a class="dropdown-item" href="#">About 2</a></li>
+                                                                <li><a class="dropdown-item" href="#">About 3</a></li>
+                                                            </ul>
+                                                        </li>
+
+                               -->
+                            <li><a class="dropdown-item nav-link" href="{% url 'main:news' %}">{% trans "Yangililar" %} </a></li>
+
+                            <!--
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="sub-nav4" data-toggle="dropdown"
                                    aria-haspopup="true" aria-expanded="false">
@@ -282,58 +297,81 @@
                                     <li><a class="dropdown-item" href="#">Product Single</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav5" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Blog
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="sub-nav5">
-                                    <li><a class="dropdown-item" href="#">Blog Cat 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Cat 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Cat 3</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Cat Masonry</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Details 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Details 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Details 3</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Single image</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Single Slider</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Blog Single Video</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Blog Timeline</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav6" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="sub-nav6">
-                                    <li><a class="dropdown-item" href="#">404</a></li>
-                                    <li><a class="dropdown-item" href="#">Comming Soon</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery Filter</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery Filter
-                                        Masonry</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery History</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery History 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery Single</a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery Timeline </a></li>
-                                    <li><a class="dropdown-item" href="#">Gallery Timeline 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{% url 'main:contact_us' %}" id="sub-nav7" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Biz bilan bog'lanish
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="sub-nav7">
-                                    <li><a class="dropdown-item" href="{% url 'main:contact_us' %}">Biz bilan bo'glanish</a></li>
-                                    <li><a class="dropdown-item" href="#">Contact Us 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Contact Us 3</a></li>
-                                </ul>
-                            </li>
+                -->
+                            <!--
+
+                                         <li class="nav-item dropdown">
+                                             <a class="nav-link dropdown-toggle" href="#" id="sub-nav5" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                 Blog
+                                             </a>
+                                             <ul class="dropdown-menu" aria-labelledby="sub-nav5">
+                                                 <li><a class="dropdown-item" href="#">Blog Cat 1</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Cat 2</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Cat 3</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Cat Masonry</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Details 1</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Details 2</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Details 3</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Single image</a></li>
+                                                 <li><a class="dropdown-item" href="#">Blog Single Slider</a>
+                                                 </li>
+                                                 <li><a class="dropdown-item" href="#">Blog Single Video</a>
+                                                 </li>
+                                                 <li><a class="dropdown-item" href="#">Blog Timeline</a></li>
+                                             </ul>
+                                         </li>
+
+                            -->
+
+
+                            <li><a class="dropdown-item nav-link" href="{% url 'main:about' %}">{% trans "Biz haqimizda" %} </a></li>
+
+                            <!--
+                                           <li class="nav-item dropdown">
+                                               <a class="nav-link dropdown-toggle" href="#" id="sub-nav6" data-toggle="dropdown"
+                                                  aria-haspopup="true" aria-expanded="false">
+                                                   Pages
+                                               </a>
+                                               <ul class="dropdown-menu" aria-labelledby="sub-nav6">
+                                                   <li><a class="dropdown-item" href="#">404</a></li>
+                                                   <li><a class="dropdown-item" href="#">Comming Soon</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery Filter</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery Filter
+                                                       Masonry</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery History</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery History 2</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery Single</a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery Timeline </a></li>
+                                                   <li><a class="dropdown-item" href="#">Gallery Timeline 2</a>
+                                                   </li>
+                                               </ul>
+                                           </li>
+
+                            -->
+
+                            <li><a class="dropdown-item nav-link" href="{% url 'main:contact_us' %}">
+                                {% trans "Biz bilan bo'glanish" %}
+                            </a></li>
+
+                            <!--
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="{% url 'main:contact_us' %}" id="sub-nav7"
+                                                   data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                                    Biz bilan bog'lanish
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="sub-nav7">
+                                                    <li><a class="dropdown-item" href="{% url 'main:contact_us' %}">Biz bilan
+                                                        bo'glanish</a></li>
+                                                    <li><a class="dropdown-item" href="#">Contact Us 2</a></li>
+                                                    <li><a class="dropdown-item" href="#">Contact Us 3</a></li>
+                                                </ul>
+                                            </li>
+
+                            -->
+
                         </ul>
 
                     </div>
@@ -354,22 +392,9 @@
 <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-2 mb-5 text-center">
-                <h2 class="font-30 semi-font mb-5">Newsletter</h2>
-                <form class="form-inline position-relative">
-                    <div class="form-group fables-subscribe-formgroup">
-                        <input type="email" class="form-control fables-subscribe-input fables-btn-rouned"
-                               placeholder="Your Email">
-                    </div>
-                    <button type="submit"
-                            class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn">Subscribe
-                    </button>
-                </form>
-
-            </div>
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img
-                        src="{% static 'assets/custom/images/fables-logo.png' %}" alt="fables template"></a>
+                        src="{% static '/images/logo.png' %}" alt="fables template" width="50"></a>
                 <p class="font-15 fables-third-text-color">
                     t is a asffsdf f asdgsd gg fact that a reader will be distracted by the readable content of a page
                     when
@@ -384,36 +409,38 @@
             </div>
 
             <div class="col-12 col-sm-6 col-lg-4">
-                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">Contact us</h2>
+                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">{% trans "Biz bilan bog'lanish" %}</h2>
                 <div class="my-3">
                     <h4 class="font-16 semi-font"><span
                             class="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
-                        Address Information</h4>
-                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">level13, 2Elizabeth St, Melbourne, Victor
-                        2000</p>
+                        {% trans "Manzil ma'lumotlari" %}</h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">
+                        {% trans "Yashnobod tumani, Sultanali mashxariy 217-uy" %}
+                    </p>
                 </div>
                 <div class="my-3">
-                    <h4 class="font-16 semi-font"><span
-                            class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
-                        Call Now </h4>
-                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">+333 111 111 000</p>
+                    <h4 class="font-16 semi-font">
+                        <span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
+                        {% trans "Telefon nomer" %}
+                    </h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">+998 712 475 369</p>
                 </div>
                 <div class="my-3">
-                    <h4 class="font-16 semi-font"><span
-                            class="fables-iconemail fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
-                        Mail </h4>
-                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">adminsupport@website.com</p>
+                    <h4 class="font-16 semi-font">
+                        <span class="fables-iconemail fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
+                        {% trans "Mail" %}
+                    </h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4">stomalitsey@gmail.com</p>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
-                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3">EXPLORE OUR SITE</h2>
+                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3">{% trans "SAYTIMIZNI TEKSHIRING" %}</h2>
                 <ul class="nav fables-footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="{% url 'main:direktors' %}">{% trans "Ma'muriyat" %}</a></li>
+                    <li><a href="{% url 'main:teachers' %}">{% trans "Ustozlar" %}</a></li>
+                    <li><a href="{% url 'main:about' %}">{% trans "Biz haqimizda" %}</a></li>
+                    <li><a href="{% url 'main:contact_us' %}">{% trans "Biz bilan bog'lanish" %}</a></li>
+                    <li><a href="{% url 'main:news' %}">{% trans "Yangiliklar" %}</a></li>
                 </ul>
             </div>
 
@@ -423,14 +450,14 @@
 </div>
 <div class="copyright fables-main-background-color mt-0 border-0 white-color">
     <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
-        <li><a href="#" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+        <li><a href="mail:ergashovbotirjon4@gmail.com" target="_blank"><i class="fab fa-google-plus-square"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/botirjon642" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        {#        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>#}
         <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
         <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
     </ul>
-    <p class="mb-0">Copyright © Fables 2018. All rights reserved.</p>
+    <p class="mb-0">{% trans "Copyright © TalantDeveloper 2023. Barcha huquqlar himoyalangan." %} </p>
 
 </div>
 
@@ -452,307 +479,3 @@
 
 </body>
 </html>
-
-
-{##}
-{#<!doctype html>#}
-{#<html class="no-js" lang="en">#}
-{##}
-{#<head>#}
-{#    <!-- META DATA -->#}
-{#    <meta charset="utf-8">#}
-{#    <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
-{#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
-{#    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->#}
-{##}
-{#    <!--font-family-->#}
-{#    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">#}
-{#    <link rel="stylesheet"#}
-{#          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>#}
-{#    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">#}
-{##}
-{#    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">#}
-{##}
-{#    <!-- TITLE OF SITE -->#}
-{#    <title>Akademik litsey</title>#}
-{##}
-{#    <!-- for title img -->#}
-{#    <link rel="shortcut icon" type="image/icon" href="{% static 'images/favicon.ico' %}"/>#}
-{##}
-{#    <!--font-awesome.min.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">#}
-{##}
-{#    <!--linear icon css-->#}
-{#    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">#}
-{##}
-{#    <!--animate.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/animate.css' %}">#}
-{##}
-{#    <!--hover.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">#}
-{##}
-{#    <!--vedio player css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">#}
-{##}
-{#    <!--owl.carousel.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">#}
-{#    <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet"/>#}
-{##}
-{##}
-{#    <!--bootstrap.min.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">#}
-{##}
-{#    <!-- bootsnav -->#}
-{#    <link href="{% static 'css/bootsnav.css' %}" rel="stylesheet"/>#}
-{##}
-{#    <!--style.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
-{##}
-{#    <!--responsive.css-->#}
-{#    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">#}
-{#</head>#}
-{##}
-{#<body>#}
-{##}
-{#<!--header start-->#}
-{#<section class="header">#}
-{#    <div class="container">#}
-{#        <div class="header-left">#}
-{#            <ul class="pull-left">#}
-{#                <li>#}
-{#                    <a href="tel:+998712695483">#}
-{#                        <i class="fa fa-phone" aria-hidden="true"></i> +(871) 269-54-83#}
-{#                    </a>#}
-{#                </li><!--/li-->#}
-{#                <li>#}
-{#                    <a href="mail:litsey@tsdi.uz">#}
-{#                        <i class="fa fa-envelope" aria-hidden="true"></i>litsey@tsdi.uz#}
-{#                    </a>#}
-{#                </li><!--/li-->#}
-{#            </ul><!--/ul-->#}
-{#        </div><!--/.header-left -->#}
-{#        <div class="header-right pull-right">#}
-{#            <ul>#}
-{#                <li class="reg">#}
-{#                    <a class="<?php if(app()->getLocale()=='uz') echo 'active-color';?>" href="/uz/">#}
-{#                        O`zb#}
-{#                    </a>#}
-{#                    /#}
-{#                    <a class="<?php if(app()->getLocale()=='ru') echo 'active-color';?>" href="/ru/">#}
-{#                        Pус#}
-{#                    </a>#}
-{#                    /#}
-{#                    <a class="<?php if(app()->getLocale()=='en') echo 'active-color';?>" href="/en/">#}
-{#                        Eng#}
-{#                    </a>#}
-{#                </li><!--/li -->#}
-{#                <li>#}
-{#                    <div class="social-icon">#}
-{#                        <ul>#}
-{#                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
-{#                            <li><a href="#"><i class="fa fa-telegram"></i></a></li>#}
-{#                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
-{#                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
-{#                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
-{#                        </ul><!--/.ul -->#}
-{#                    </div><!--/.social-icon -->#}
-{#                </li><!--/li -->#}
-{#            </ul><!--/ul -->#}
-{#        </div><!--/.header-right -->#}
-{#    </div><!--/.container -->#}
-{##}
-{#</section><!--/.header-->#}
-{#<!--header end-->#}
-{#<!--menu start-->#}
-{#<section id="menu">#}
-{#    <div class="container">#}
-{#        <div class="menubar">#}
-{#            <nav class="navbar navbar-default">#}
-{##}
-{#                <!-- Brand and toggle get grouped for better mobile display -->#}
-{#                <div class="navbar-header">#}
-{#                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"#}
-{#                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">#}
-{#                        <span class="sr-only">Toggle navigation</span>#}
-{#                        <span class="icon-bar"></span>#}
-{#                        <span class="icon-bar"></span>#}
-{#                        <span class="icon-bar"></span>#}
-{#                    </button>#}
-{#                    <a class="navbar-brand" href="/">#}
-{#                        <img style="height: 70px; margin-top:-25px" src="{% static 'images/logo.png' %}" alt="logo">#}
-{#                    </a>#}
-{#                </div><!--/.navbar-header -->#}
-{##}
-{#                <!-- Collect the nav links, forms, and other content for toggling -->#}
-{#                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">#}
-{#                    <ul class="nav navbar-nav navbar-right ws-list">#}
-{#                        <li><a href="/">{% trans 'Asosiy' %}</a></li>#}
-{#                        <li><a href="{% url 'main:page' 'oquvchilar' %}">{% trans "O'quvchilar" %}</a></li>#}
-{#                        <li><a href="{% url 'main:page' 'ilmiy_hayot' %}">{% trans 'Ilmiy hayot' %}</a></li>#}
-{#                        <li><a href="{% url 'main:page' 'ijtimoiy_hayot' %}">{% trans 'Ijtimoiy hayot' %}</a></li>#}
-{#                        <li><a href="{% url 'main:news' %}">{% trans 'Yangiliklar' %}</a></li>#}
-{#                        <li><a href="{% url 'main:page' 'abituriyentlarga' %}">{% trans 'Abituriyentlarga' %}</a></li>#}
-{#                        <li><a href="{% url 'main:page' 'boglanish' %}">{% trans 'Bog`lanish' %}</a></li>#}
-{#                    </ul><!-- / ul -->#}
-{#                </div><!-- /.navbar-collapse -->#}
-{#            </nav><!--/nav -->#}
-{#        </div><!--/.menubar -->#}
-{#    </div><!-- /.container -->#}
-{##}
-{#</section><!--/#menu-->#}
-{##}
-{#<!-- footer-copyright start -->#}
-{#<!--hm-footer start-->#}
-{#<section class="hm-footer">#}
-{#    <div class="container">#}
-{#        <div class="hm-footer-details">#}
-{#            <div class="row">#}
-{#                <div class="col-md-4 col-sm-6 col-xs-12">#}
-{#                    <div class="hm-footer-widget">#}
-{#                        <div class="hm-foot-title ">#}
-{#                            <div class="hm-foot-title">#}
-{#                                <h4>{% trans 'Diqqat! Eslatma...' %}</h4>#}
-{#                            </div>#}
-{#                        </div><!--/.hm-foot-title-->#}
-{#                        <div class="hm-foot-para">#}
-{#                            <p>#}
-{#                                {% trans 'Barcha huquqlar himoyalangan. Saytdagi barcha huquqlar O`zbekiston Respublikasi qonunlariga, shu jumladan mualliflik huquqi va turdosh huquqlarga muvofiq himoya qilinadi. Sayt materiallaridan foydalanganda, Mazkur saytiga havola ko`rsatilishi shart.' %}#}
-{#                            </p>#}
-{#                        </div><!--/.hm-foot-para-->#}
-{#                        <div class="hm-foot-icon">#}
-{#                            <ul>#}
-{#                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->#}
-{#                                <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li><!--/li-->#}
-{#                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->#}
-{#                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->#}
-{#                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->#}
-{#                            </ul><!--/ul-->#}
-{#                        </div><!--/.hm-foot-icon-->#}
-{#                    </div><!--/.hm-footer-widget-->#}
-{#                </div><!--/.col-->#}
-{#                <div class=" col-md-2 col-sm-6 col-xs-12">#}
-{#                    <div class="hm-footer-widget">#}
-{#                        <div class="hm-foot-title">#}
-{#                            <h4>{% trans 'Sahifalar' %}</h4>#}
-{#                        </div><!--/.hm-foot-title-->#}
-{#                        <div class="footer-menu ">#}
-{#                            <ul>#}
-{#                                <li><a href="/">{% trans 'Asosiy' %}</a></li>#}
-{#                                <li><a href="{% url 'main:page' 'oquvchilar' %}">{% trans "O'quvchilar" %}</a></li>#}
-{#                                <li><a href="{% url 'main:page' 'ilmiy_hayot' %}">{% trans 'Ilmiy hayot' %}</a></li>#}
-{#                                <li><a href="{% url 'main:page' 'ijtimoiy_hayot' %}">{% trans 'Ijtimoiy hayot' %}</a>#}
-{#                                </li>#}
-{#                                <li><a href="{% url 'main:news' %}">{% trans 'Yangiliklar' %}</a></li>#}
-{#                                <li>#}
-{#                                    <a href="{% url 'main:page' 'abituriyentlarga' %}">{% trans 'Abituriyentlarga' %}</a>#}
-{#                                </li>#}
-{#                                <li><a href="{% url 'main:page' 'boglanish' %}">{% trans 'Bog`lanish' %}</a></li>#}
-{#                            </ul>#}
-{#                        </div><!-- /.footer-menu-->#}
-{#                    </div><!--/.hm-footer-widget-->#}
-{#                </div><!--/.col-->#}
-{#                <div class=" col-md-3 col-sm-6 col-xs-12">#}
-{#                    <div class="hm-footer-widget">#}
-{#                        <div class="hm-foot-title">#}
-{#                            <h4>{% trans 'Litsey manzili' %}</h4>#}
-{#                        </div><!--/.hm-foot-title-->#}
-{#                        <div class="hm-para-news">#}
-{#                            <a href="https://yandex.uz/maps/org/234287569433/?ll=69.329104%2C41.307729&z=18">#}
-{#                                {% trans "O'zbekiston, Toshkent, Yashnobod tumani, Sultonali Mashhadiy koʻchasi, 217/2" %}#}
-{#                            </a>#}
-{#                        </div><!--/.hm-para-news-->#}
-{#                        <div class="footer-line">#}
-{#                            <div class="border-bottom"></div>#}
-{#                        </div>#}
-{#                        <div class="hm-para-news">#}
-{#                            <a href="https://tsdi.uz/">#}
-{#                                {% trans 'Toshkent davlat Stomotologiya Instituti qoshidagi Akademik litsey' %}#}
-{#                            </a>#}
-{#                            <span>https://tsdi.uz/</span>#}
-{#                        </div><!--/.hm-para-news-->#}
-{#                    </div><!--/.hm-footer-widget-->#}
-{#                </div><!--/.col-->#}
-{#                <div class=" col-md-3 col-sm-6  col-xs-12">#}
-{#                    <div class="hm-footer-widget">#}
-{#                        <div class="hm-foot-title">#}
-{#                            <h4>{% trans 'Manzil xaritada' %}</h4>#}
-{#                        </div><!--/.hm-foot-title-->#}
-{#                        <div class="hm-foot-para">#}
-{##}
-{#                        </div><!--/.hm-foot-para-->#}
-{#                        <div class="hm-foot-email">#}
-{#                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47951.77465676342!2d69.298999!3d41.30917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41490626bc752d26!2sToshkent%20davlat%20stomatologiya%20instituti!5e0!3m2!1sen!2sus!4v1644837271542!5m2!1sen!2sus"#}
-{#                                    width="600" height="220" style="border:0;" allowfullscreen=""#}
-{#                                    loading="lazy"></iframe>#}
-{#                        </div><!--/.hm-foot-email-->#}
-{#                    </div><!--/.hm-footer-widget-->#}
-{#                </div><!--/.col-->#}
-{#            </div><!--/.row-->#}
-{#        </div><!--/.hm-footer-details-->#}
-{#    </div><!--/.container-->#}
-{##}
-{#</section><!--/.hm-footer-details-->#}
-{#<!--hm-footer end-->#}
-{#<footer class="footer-copyright">#}
-{#    <div class="container">#}
-{#        <div class="row">#}
-{#            <div class="col-sm-7">#}
-{#                <div class="foot-copyright pull-left">#}
-{#                    <p>#}
-{#                        &copy; {% trans 'Toshkent davlat Stomotologiya Instituti qoshidagi Akademik litsey' %}#}
-{#                        <a href="https://litsey.tsdi.uz">tsdi.uz</a>#}
-{#                    </p>#}
-{#                </div><!--/.foot-copyright-->#}
-{#            </div><!--/.col-->#}
-{#            <!--/.col-->#}
-{#        </div><!--/.row-->#}
-{#        <div id="scroll-Top">#}
-{#            <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top"#}
-{#               title="" data-original-title="Back to Top" aria-hidden="true"></i>#}
-{#        </div><!--/.scroll-Top-->#}
-{#    </div><!-- /.container-->#}
-{##}
-{#</footer><!-- /.footer-copyright-->#}
-{#<!-- footer-copyright end -->#}
-{##}
-{#<!-- jaquery link -->#}
-{##}
-{#<script src="{% static 'js/jquery.js' %}"></script>#}
-{#<!-- Include all compiled plugins (below), or include individual files as needed -->#}
-{##}
-{#<!--modernizr.min.js-->#}
-{#<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>#}
-{##}
-{#<!--bootstrap.min.js-->#}
-{#<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>#}
-{##}
-{#<!-- bootsnav js -->#}
-{#<script src="{% static 'js/bootsnav.js' %}"></script>#}
-{##}
-{#<!-- for manu -->#}
-{#<script src="{% static 'js/jquery.hc-sticky.min.js' %}" type="text/javascript"></script>#}
-{##}
-{#<!-- vedio player js -->#}
-{#<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>#}
-{##}
-{#<script type="text/javascript"#}
-{#        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>#}
-{##}
-{#<!--owl.carousel.js-->#}
-{#<script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>#}
-{##}
-{#<!-- counter js -->#}
-{#<script src="{% static 'js/jquery.counterup.min.js' %}"></script>#}
-{#<script src="{% static 'js/waypoints.min.js' %}"></script>#}
-{##}
-{#<!--Custom JS-->#}
-{#<script type="text/javascript" src="{% static 'js/jak-menusearch.js' %}"></script>#}
-{#<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>#}
-{#<!-- mainscript -->#}
-{#<script src="{% static 'js/main.js' %}"></script>#}
-{#</body>#}
-{##}
-{#</html>#}
-{##}
-
-
