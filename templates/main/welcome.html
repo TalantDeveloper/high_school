@@ -9,15 +9,16 @@
             <div class="row">
                 <div class="col-12 col-lg-7 offset-lg-4 wow fadeInUpBig" data-wow-duration="2s">
                     <div class="index-3-height-caption">
-                        <p class="font-30 fables-second-text-color">Toshkent</p>
-                        <h1 class="fables-main-text-color bold-font mb-2 font-40">Davlat Stomatologiyasi Instituti
-                            qoshidagi</h1>
+                        <p class="font-30 fables-second-text-color">{% trans "Toshkent" %}</p>
+                        <h1 class="fables-main-text-color bold-font mb-2 font-40">
+                            {% trans "Davlat Stomatologiyasi Instituti qoshidagi" %}
+                        </h1>
                         <p class="fables-forth-text-color font-22 mb-3">
-                            Tibbiyot Akademik litsey
+                            {% trans "Tibbiyot Akademik litsey" %}
                         </p>
                         <a href="{% url 'main:contact_us' %}"
                            class="btn fables-second-background-color fables-second-border-color white-color rounded-0 mr-4 px-4 py-2 white-color-hover">
-                            Biz bilan bog'lanish
+                            {% trans "Biz bilan bog'lanish" %}
                         </a>
                     </div>
                 </div>
@@ -32,11 +33,14 @@
             <div class="col-12 col-lg-2 p-0">
                 <div class="text-center fables-main-background-color fables-sqr-rotation fables-second-border-color fables-sqr-rotation-services">
                     <div class="text-rotate">
-                        <h2 class="text-white font-25">Bizning <br><span
-                                class="white-color font-40 bold-font mt-2 d-block">Yo'nalishlar</span>
+                        <h2 class="text-white font-25">
+                            {% trans "Bizning" %}
+                            <br><span class="white-color font-40 bold-font mt-2 d-block">
+                            {% trans "Yo'nalishlar" %}
+                        </span>
                         </h2>
                         <p class="fables-third-text-color mt-4 mb-3 mb-lg-5">
-                            Akademik litseydagi mavjud yo'nalishlar
+                            {% trans "Akademik litseydagi mavjud yo'nalishlar" %}
                         </p>
                     </div>
                 </div>
@@ -51,13 +55,12 @@
                                          data-wow-delay=".4s">
                                         <div class="row text-center text-md-left">
                                             <div class="col-12 col-md-3 col-xl-2 mb-3 mb-md-0">
-                                                <span class="fables-iconhead-set-light fables-second-text-color font-40"></span>
+                                                <span class="fables-iconfile fables-second-text-color font-40"></span>
                                             </div>
                                             <div class="col-12 col-md-9 pl-md-0">
-                                                <h2 class="text-white font-19 semi-font mb-2"> Tabbiy fanlar </h2>
+                                                <h2 class="text-white font-19 semi-font mb-2"> {% trans "Tabbiy fanlar" %}</h2>
                                                 <div class="font-14 text-white">
-                                                    Lorem ipsum dolor sit amet adipiscing elit. Aenean ac lorem pretium
-                                                    laoreet enim at.
+                                                    {% trans "Astronomiya | Biologiya | Kimyo | Geografiya | Fizika kabi fanlar to'liq o'rgatiladi." %}
                                                 </div>
 
                                             </div>
@@ -71,7 +74,9 @@
                                                 <span class="fables-iconscreen fables-second-text-color font-40"></span>
                                             </div>
                                             <div class="col-12 col-md-9 pl-md-0">
-                                                <h2 class="text-white font-19 semi-font mb-2">Ilmiy fanlar</h2>
+                                                <h2 class="text-white font-19 semi-font mb-2">
+                                                    {% trans "Ilmiy fanlar" %}
+                                                </h2>
                                                 <div class="font-14 text-white">
                                                     Lorem ipsum dolor sit amet adipiscing elit. Aenean ac lorem pretium
                                                     laoreet enim at.
@@ -87,7 +92,8 @@
                                                 <span class="fables-iconfile fables-second-text-color font-40"></span>
                                             </div>
                                             <div class="col-12 col-md-9 pl-md-0">
-                                                <h2 class="text-white font-19 semi-font mb-2"> Aniq fanlar
+                                                <h2 class="text-white font-19 semi-font mb-2">
+                                                    {% trans "Aniq fanlar" %}
                                                 </h2>
                                                 <div class="font-14 text-white">
                                                     Lorem ipsum dolor sit amet adipiscing elit. Aenean ac lorem pretium
@@ -130,9 +136,9 @@
         <div class="row mt-3 mt-md-5">
             <div class="col-12 col-lg-5 offset-lg-1 mb-4 mb-lg-0 overflow-hidden">
                 <h2 class="fables-second-text-color font-35 bold-font wow fadeInLeft">
-                    BIZNI
+                    {% trans "BIZNI" %}
                     <span class="fables-main-text-color">
-                        NEGA TANLAYSIZ
+                        {% trans "NEGA TANLAYSIZ" %}
                     </span>
                 </h2>
                 <p class="fables-forth-text-color my-3 wow fadeInLeft">
@@ -187,15 +193,18 @@
             <div class="row">
                 <div class="col-12 col-lg-8 offset-lg-2 text-center position-relative z-index wow zoomIn"
                      data-wow-duration="1.5s">
-                    <h3 class="white-color mb-3 font-25 font-weight-bold">We are the best business consulting company
-                        ever!!</h3>
+                    <h3 class="white-color mb-3 font-25 font-weight-bold">
+                        {% trans "Toshkent Davlat Stomatologiya Instituti akademik litsey!!" %}
+
+                    </h3>
                     <p class="z-index font-weight-light text-white fables-third-text-color">
+
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac lorem pretium laoreet enim
                         at, malesuada Class aptent taciti sociosqu.
                     </p>
                     <a href="{% url 'main:contact_us' %}"
                        class="btn fables-second-background-color white-color white-color-hover fables-btn-rounded  mt-4 py-2 px-5 position-relative z-index">
-                        Biz bilan bog'lanish
+                        {% trans "Biz bilan bog'lanish" %}
                     </a>
                 </div>
             </div>
@@ -207,7 +216,7 @@
     <!-- Start Team -->
     <div class="container">
         <div class="fables-team overflow-hidden">
-            <h2 class="font-35 font-weight-bold text-center fables-main-text-color my-4 my-lg-5">Ustozlar</h2>
+            <h2 class="font-35 font-weight-bold text-center fables-main-text-color my-4 my-lg-5">{% trans "Ustozlar" %}</h2>
             <div class="row">
                 {% for teacher in teachers %}
                     <div class="col-6 col-md-3 wow fadeInDown mb-3" data-wow-delay=".3s">
@@ -329,11 +338,11 @@
             <div class="col-12 col-lg-2 p-0">
                 <div class="text-center fables-main-background-color fables-sqr-rotation fables-second-border-color">
                     <div class="text-rotate">
-                        <h2 class="text-white font-25">Litsey <br><span
-                                class="white-color font-40 bold-font mt-2 d-block">Ma'muriyati</span>
+                        <h2 class="text-white font-25">{% trans "LITSEY" %} <br><span
+                                class="white-color font-40 bold-font mt-2 d-block">{% trans "Ma'muriyati" %}</span>
                         </h2>
                         <p class="fables-third-text-color mt-4 mb-3 mb-lg-5">
-                            Akademik litsey Direktor va Zamdirektorllari
+                            {% trans "Akademik litsey Direktor va Zamdirektorllari" %}
                         </p>
                     </div>
                 </div>
@@ -343,15 +352,15 @@
                     <div class="container z-index position-relative">
                         <div class="row">
                             <div class="col-12 col-lg-10 offset-lg-2">
-                                <div class="owl-carousel owl-theme dots-0 carousel-items-3 circle-nav mt-lg-4 mb-lg-5"
-                                     id="blog-slider">
-                                    {% for direktor in directors %}
+                                {% for director in directors %}
+                                    <div class="owl-carousel owl-theme dots-0 carousel-items-3 circle-nav mt-lg-4 mb-lg-5"
+                                         id="blog-slider">
                                         <div class="card rounded-0 border-light wow fadeIn mb-4 mb-lg-0"
                                              data-wow-delay=".4s">
                                             <div class="row">
                                                 <div class="fables-product-img col-12">
                                                     <img class="card-img-top rounded-0 w-100"
-                                                         src="{{ direktor.image.url }}" alt="dress fashion">
+                                                         src="{{ director.image.url }}" alt="dress fashion">
                                                     <div class="fables-img-overlay">
                                                         <ul class="nav fables-product-btns">
                                                             <li>
@@ -371,15 +380,13 @@
                                                     <h5 class="card-title mx-3">
                                                         <a href="{% url 'main:direktors' %}"
                                                            class="fables-main-text-color fables-store-product-title fables-second-hover-color">
-                                                            {{ direktor.name }}
+                                                            {{ director.name }}
                                                         </a>
                                                     </h5>
                                                     <p class="card-text fables-fifth-text-color fables-store-product-details mx-3 store-card-text">
-                                                        {{ direktor.position }}
+                                                        {{ director.position }}
                                                     </p>
-                                                    <p class="fables-product-price fables-second-text-color my-2 mx-3 semi-font">
-                                                        $ 98.00
-                                                    </p>
+
                                                     <p class="fables-product-info my-2">
                                                         <a href="{% url 'main:direktors' %}"
                                                            class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-15">
@@ -389,9 +396,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    {% endfor %}
-
-                                </div>
+                                    </div>
+                                {% endfor %}
                                 <a href="{% url 'main:direktors' %}" class="btn white-color font-18 all-index-products fables-second-hover-color border-0 p-0
                                        position-absolute d-block pt-4 pt-md-0 z-index ">
                                     <span class="underline">To'liq ko'rish</span>
@@ -501,6 +507,9 @@
         </div>
     </div>
     <!-- End   Parteners Slider -->
+
+
+
 
 {% endblock %}
 
