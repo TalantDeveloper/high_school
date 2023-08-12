@@ -6,7 +6,7 @@
     <!-- Start Header -->
     <div class="fables-header fables-after-overlay">
         <div class="container">
-            <h2 class="fables-page-title fables-second-border-color">Akademik Litsey Yangiliklari</h2>
+            <h2 class="fables-page-title fables-second-border-color">{% trans "Akademik Litsey Yangiliklari" %}</h2>
         </div>
     </div>
     <!-- /End Header -->
@@ -16,8 +16,10 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-                    <li class="breadcrumb-item"><a href="#" class="fables-second-text-color">Asosiy</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Akademik Litsey Yangiliklari</li>
+                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}"
+                                                   class="fables-second-text-color">{% trans "Asosiy" %}</a></li>
+                    <li class="breadcrumb-item active"
+                        aria-current="page">{% trans "Akademik Litsey Yangiliklari" %}</li>
                 </ol>
             </nav>
         </div>
@@ -41,7 +43,7 @@
                 </div>
 
                 <h2 class="font-16 semi-font fables-forth-text-color fables-light-gary-background  p-3 my-4">
-                    So'ngi yangililar
+                    {% trans "So'ngi yangiliklar" %}
                 </h2>
                 {% for news_order in news_orders %}
                     <div class="row mb-3">
@@ -159,41 +161,47 @@
                 <div class="row">
 
                     {% for new in news %}
-                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
-                        <div class="card rounded-0 mb-4">
-                            <div class="row">
-                                <div class="fables-product-img col-12">
-                                    <img class="card-img-top rounded-0"
-                                         src="{{ new.image.url }}"
-                                         alt="dress fashion">
-                                    <div class="fables-img-overlay">
-                                        <ul class="nav fables-product-btns">
-                                            <li><a href="" class="fables-product-btn"><span
-                                                    class="fables-iconeye"></span></a></li>
-                                            <li><a href="" class="fables-product-btn"><span
-                                                    class="fables-iconcompare"></span></a></li>
-                                            <li>
-                                                <button class="fables-product-btn"><span
-                                                        class="fables-iconheart"></span></button>
-                                            </li>
-                                        </ul>
+                        <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                            <div class="card rounded-0 mb-4">
+                                <div class="row">
+                                    <div class="fables-product-img col-12">
+                                        <img class="card-img-top rounded-0"
+                                             src="{{ new.image.url }}"
+                                             alt="dress fashion" height="200">
+                                        <div class="fables-img-overlay">
+                                            <ul class="nav fables-product-btns">
+                                                <li><a href="{% url 'main:new' new.pk %}"
+                                                       class="fables-product-btn"><span
+                                                        class="fables-iconeye"></span></a></li>
+                                                <li><a href="" class="fables-product-btn"><span
+                                                        class="fables-iconcompare"></span></a></li>
+                                                <li>
+                                                    <button class="fables-product-btn"><span
+                                                            class="fables-iconheart"></span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body col-12">
-
-                                    <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">
-                                        <a href="{% url 'main:new' new.id %}"
-                                           class="fables-main-text-color fables-store-product-title fables-second-hover-color">
-                                            {{ new.title |slice:68 }}
-                                        </a>
-                                    </p>
-                                    <p class="fables-product-info">
-                                        <a href="{% url 'main:new' new.id %}" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
-                                        <span class="fables-btn-value">To'liq ko'rish</span></a></p>
+                                    <div class="card-body col-12">
+                                        <p class="store-card-text fables-fifth-text-color font-15 mx-xl-3">
+                                            <a href="{% url 'main:new' new.id %}"
+                                               class="fables-main-text-color fables-store-product-title fables-second-hover-color">
+                                                {{ new.title |slice:68 }}
+                                            </a>
+                                        </p>
+                                        <br>
+                                        <span class="fables-icondata fables-second-text-color mr-1"></span>
+                                        <span class="mr-3 font-15"> {{ new.create_at|date:"d:m:Y" }}</span>|
+                                        <span class="mr-3 font-15"> {{ new.create_at|time:"H:i" }}</span>
+                                        <p class="fables-product-info">
+                                            <a href="{% url 'main:new' new.id %}"
+                                               class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
+                                                <span class="fables-btn-value"> {% trans "To'liq ko'rish" %}</span></a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     {% endfor %}
 
                     <div class="col-12 col-sm-6 col-lg-4 fables-product-block">

@@ -7,7 +7,7 @@
     <!-- Start Header -->
     <div class="fables-header fables-after-overlay">
         <div class="container">
-            <h2 class="fables-page-title fables-second-border-color">Ustozlar</h2>
+            <h2 class="fables-page-title fables-second-border-color">{% trans "Ustozlar" %}</h2>
         </div>
     </div>
     <!-- /End Header -->
@@ -17,9 +17,9 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">Asosiy</a>
+                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">{% trans "Asosiy" %}</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Ustozlar</li>
+                    <li class="breadcrumb-item active" aria-current="page">{% trans "Ustozlar" %}</li>
                 </ol>
             </nav>
         </div>
@@ -29,8 +29,6 @@
 
     <div class="container py-3 py-lg-5">
         <div class="fables-team my-3">
-            <h3 class="fables-second-text-color mb-5 font-weight-bold"> Ustozlar </h3>
-
             <div class="row">
                 {% for teacher in teachers %}
                     <div class="col-6 col-md-3 mb-4 mb-lg-5">
@@ -68,8 +66,6 @@
                         </div>
                     </div>
                 {% endfor %}
-
-
 
                 <div class="col-6 col-md-3 mb-4 mb-lg-5">
                     <div class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">

@@ -3,24 +3,29 @@
 {% load static %}
 {% block content %}
 
-
-
     <!-- Start Breadcrumbs -->
-    <div class="fables-light-background-color">
+    <div class="fables-light-gary-background">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">
-                        Asosiy
-                    </a>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'main:welcome' %}" class="fables-second-text-color">
+                            {% trans "Asosiy" %}
+                        </a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                        Yangiliklar
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'main:news' %}" class="fables-second-text-color">
+                            {% trans "Yangiliklar" %}
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        {% trans "Yangilik" %}
                     </li>
                 </ol>
             </nav>
         </div>
     </div>
+
     <!-- /End Breadcrumbs -->
 
     <!-- Start page content -->
@@ -45,31 +50,34 @@
             </div>
             <h2 class="font-23 semi-font">
                 <a href="{% url 'main:new' new.id %}" class="fables-main-text-color fables-second-hover-color">
-                {{ new.title }}
-            </a></h2>
+                    {{ new.title }}
+                </a>
+            </h2>
+            <p class="fables-forth-text-color font-14 my-4">
+                {{ new.content |safe }}
+            </p>
             <div class="fables-forth-text-color fables-blog-date">
                 <div class="row">
                     <div class="col-12 col-md-9 col-lg-10 pt-2">
                         <span class="fables-icondata fables-second-text-color mr-1"></span>
-                        <span class="mr-3"> {{ new.create_at }} </span>
-                        <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                        <span class="mr-3 font-15">{{ new.create_at|date:"d:m:Y" }}</span>|
+                        <span class="mr-3 font-15">{{ new.create_at|time:"H:i" }}</span>
+                        <span class="fables-iconeye fables-second-text-color mr-1"></span>
                         <a href="" class="fables-forth-text-color fables-second-hover-color position-relative z-index">
-                            2
+                            123
                         </a>
-
                     </div>
                     <div class="col-12 col-md-3 col-lg-2 text-right mt-3 mt-md-0 text-center text-md-right">
                         <button class="btn btn-link fables-fifth-border-color fables-forth-hover-backround-color fables-forth-text-color "
-                                onclick="window.print();"><span class="fables-iconprint"></span> Chop Etish
+                                onclick="window.print();"><span
+                                class="fables-iconprint"></span> {% trans "Chop Etish" %}
                         </button>
                     </div>
                 </div>
 
             </div>
 
-            <p class="fables-forth-text-color font-14 my-4">
-                {{ new.content |safe }}
-            </p>
+
         </div>
 
         <div class="row overflow-hidden">
@@ -96,7 +104,8 @@
                                class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
                         </div>
                         <h2 class="font-18 semi-font">
-                            <a href="{% url 'main:new' all_new.id %}" class="fables-main-text-color fables-second-hover-color">
+                            <a href="{% url 'main:new' all_new.id %}"
+                               class="fables-main-text-color fables-second-hover-color">
                                 {{ all_new.title|slice:75 }}
                             </a>
                         </h2>

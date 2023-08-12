@@ -11,11 +11,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
                     <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">
-                        Asosiy
+                        {% trans "Asosiy" %}
                     </a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                        Yangiliklar
                     </li>
                 </ol>
             </nav>
@@ -46,7 +43,11 @@
             <h2 class="font-23 semi-font">
                 <a href="" class="fables-main-text-color fables-second-hover-color">
                     {{ page.title }}
-                </a></h2>
+                </a>
+            </h2>
+            <p class="fables-forth-text-color font-14 my-4">
+                {{ page.content |safe }}
+            </p>
             <div class="fables-forth-text-color fables-blog-date">
                 <div class="row">
                     <div class="col-12 col-md-9 col-lg-10 pt-2">
@@ -59,10 +60,6 @@
                 </div>
 
             </div>
-
-            <p class="fables-forth-text-color font-14 my-4">
-                {{ page.content |safe }}
-            </p>
         </div>
 
         <div class="row overflow-hidden">

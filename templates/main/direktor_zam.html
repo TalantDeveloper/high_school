@@ -7,7 +7,7 @@
     <!-- Start Header -->
     <div class="fables-header fables-after-overlay">
         <div class="container">
-            <h2 class="fables-page-title fables-second-border-color">Ma'muriyat</h2>
+            <h2 class="fables-page-title fables-second-border-color">{% trans "Ma'muriyat" %}</h2>
         </div>
     </div>
     <!-- /End Header -->
@@ -17,9 +17,9 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">Asosiy</a>
+                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}" class="fables-second-text-color">{% trans "Asosiy" %}</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Ma'muriyat</li>
+                    <li class="breadcrumb-item active" aria-current="page">{% trans "Ma'muriyat" %}</li>
                 </ol>
             </nav>
         </div>
@@ -49,7 +49,7 @@
                 <h3 class="fables-forth-text-color font-15 my-3">
                     <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after px-3 px-md-5 font-15 semi-font border-0 active rounded-0 py-3"
                        id="nav-desc-tab" data-toggle="tab" href="#nav-desc" role="tab" aria-controls="nav-desc"
-                       aria-selected="true">Qisqa Tarjimai Hol</a>
+                       aria-selected="true">{% trans "Qisqacha Tarjimai xol" %}</a>
                     <br>
                     {{ director.content|safe }}
                 </h3>
@@ -121,7 +121,7 @@
         <div class="row mb-0 mb-md-5">
             <div class="col-12">
                 <h2 class="fables-forth-text-color fables-light-background-color my-3 my-md-5 py-3 text-center font-35 semi-font">
-                    Zamdirektorlar
+                    {% trans "Zamdirektorlar" %}
                 </h2>
             </div>
 
