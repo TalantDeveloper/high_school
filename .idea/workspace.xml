@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="easy comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/contact_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/direktor_zam.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/direktor_zam.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/teachers.html" afterDir="false" />
-    </list>
+    <list default="true" id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="easy comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +138,7 @@
       <workItem from="1691664137630" duration="745000" />
       <workItem from="1691734960786" duration="1747000" />
       <workItem from="1691819260984" duration="7041000" />
+      <workItem from="1691989887639" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="asdf">
       <created>1688984832314</created>
