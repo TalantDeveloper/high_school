@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="easy comment" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="easy comment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high_school/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/high_school/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/teachers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/welcome.html" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="ef38d98b-10b3-41c2-bb30-987899eb9d5d" name="Changes" comment="easy comment" />
+>>>>>>> 37bea6083e04cf87581ae91694daf8cf4f553665
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +162,15 @@
       <workItem from="1691989887639" duration="615000" />
       <workItem from="1691992580388" duration="621000" />
       <workItem from="1692006548037" duration="57000" />
+<<<<<<< Updated upstream
       <workItem from="1692028651628" duration="30000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1692257244819" duration="9137000" />
+=======
+      <workItem from="1692028651628" duration="30000" />
+>>>>>>> 37bea6083e04cf87581ae91694daf8cf4f553665
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="asdf">
       <created>1688984832314</created>

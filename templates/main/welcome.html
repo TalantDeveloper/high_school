@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load i18n %}
+{% load django_template_maths %}
 {% block content %}
 
     <!-- Start Header -->
@@ -11,7 +12,7 @@
                     <div class="index-3-height-caption">
                         <p class="font-30 fables-second-text-color">{% trans "Toshkent" %}</p>
                         <h1 class="fables-main-text-color bold-font mb-2 font-40">
-                            {% trans "Davlat Stomatologiyasi Instituti qoshidagi" %}
+                            {% trans "Davlat Stomatologiyasi Instituti" %}
                         </h1>
                         <p class="fables-forth-text-color font-22 mb-3">
                             {% trans "Tibbiyot Akademik litsey" %}
@@ -142,21 +143,20 @@
                     </span>
                 </h2>
                 <p class="fables-forth-text-color my-3 wow fadeInLeft">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor purus ac tellus auctor
-                    auctor.
-                    Nulla tincidunt lobortis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                    porttitor purus ac tellus auctor auctor. Nulla tincidunt lobortis aliquam.
+                    Toshkent Davlat Stomatologiya Instituti Akademik Litseyida Tabiiy fanlar shu jumladan Kimyo va
+                    Biologiya fanlari chuqurlashtirilgan ravishda o'qitiladi. Bizni bitirgan o'quvchilar 86% izi Oliy O'quv yurtlariga
+                    o'qishga kirishadi. O'zbek va Rus tillarida fakultetlarimiz bor.
                 </p>
                 <div class="position-relative mb-3 wow bounceInDown">
                     <p class="fables-fifth-text-color">
                         <span class="fables-iconDiagonal-arrow"></span>
-                        Lorem ipsum dolor sit amet adipiscing elit.tur adipiscing elit.
+                        Ta'lim tashkiloti elektron pochtasi <a href="mailto:stomalitsey@gmail.com">stomalitsey@gmail.com</a>
                     </p>
                 </div>
                 <div class="position-relative mb-3 wow bounceInDown">
                     <p class="fables-fifth-text-color">
                         <span class="fables-iconDiagonal-arrow"></span>
-                        Lorem ipsum dolor sit amet adipiscing elit.tur adipiscing elit.
+                        Talim tashkiloti sayti <a href="https://litsey.tsdi.uz/">litsey.tsdi.uz</a>
                     </p>
                 </div>
                 <div class="position-relative mb-3 wow bounceInDown">
@@ -251,81 +251,7 @@
                         </div>
                     </div>
                 {% endfor %}
-                <div class="col-6 col-md-3 wow fadeInDown mb-3" data-wow-delay=".6s">
-                    <div class="card fables-team-block fables-second-hover-text-color">
-                        <div class="image-container shine-effect">
-                            <a href="#"><img class="w-100" src="{% static 'assets/custom/images/team2-2.jpg' %}"
-                                             alt="Fables Template"></a>
-                        </div>
 
-                        <div class="card-body">
-                            <h5><a href="#" class="font-19 semi-font fables-main-text-color team-name">JOHN MARTIN</a>
-                            </h5>
-                            <p class="font-13 fables-fifth-text-color italic my-2">Programmer</p>
-                            <ul class="nav fables-team-social-links">
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-iconlinkedin-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 wow fadeInDown mb-3" data-wow-delay=".9s">
-                    <div class="card fables-team-block fables-second-hover-text-color">
-                        <div class="image-container shine-effect">
-                            <a href="#"><img class="w-100" src="{% static 'assets/custom/images/team2-1.jpg' %}"
-                                             alt="Fables Template"></a>
-                        </div>
-
-                        <div class="card-body">
-                            <h5><a href="#" class="font-19 semi-font fables-main-text-color team-name">JOHN MARTIN</a>
-                            </h5>
-                            <p class="font-13 fables-fifth-text-color italic my-2">Programmer</p>
-                            <ul class="nav fables-team-social-links">
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-iconlinkedin-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 wow fadeInDown mb-3" data-wow-delay="1.2s">
-                    <div class="card fables-team-block fables-second-hover-text-color">
-                        <div class="image-container shine-effect">
-                            <a href="#"><img class="w-100" src="{% static 'assets/custom/images/team2-2.jpg' %}"
-                                             alt="Fables Template"></a>
-                        </div>
-
-                        <div class="card-body">
-                            <h5><a href="#" class="font-19 semi-font fables-main-text-color team-name">JOHN MARTIN</a>
-                            </h5>
-                            <p class="font-13 fables-fifth-text-color italic my-2">Programmer</p>
-                            <ul class="nav fables-team-social-links">
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-iconlinkedin-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-icontwitter-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                                <li><a href="#" target="_blank"><span
-                                        class="fables-iconinstagram-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
@@ -352,11 +278,11 @@
                     <div class="container z-index position-relative">
                         <div class="row">
                             <div class="col-12 col-lg-10 offset-lg-2">
-                                {% for director in directors %}
-                                    <div class="owl-carousel owl-theme dots-0 carousel-items-3 circle-nav mt-lg-4 mb-lg-5"
-                                         id="blog-slider">
+                                <div class="owl-carousel owl-theme dots-0 carousel-items-3 circle-nav mt-lg-4 mb-lg-5"
+                                     id="blog-slider">
+                                    {% for director in directors %}
                                         <div class="card rounded-0 border-light wow fadeIn mb-4 mb-lg-0"
-                                             data-wow-delay=".4s">
+                                             data-wow-delay="{{ forloop.counter|mul:2|flr:5 }}s">
                                             <div class="row">
                                                 <div class="fables-product-img col-12">
                                                     <img class="card-img-top rounded-0 w-100"
@@ -390,8 +316,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                {% endfor %}
+                                    {% endfor %}
+                                </div>
+
                                 <a href="{% url 'main:direktors' %}" class="btn white-color font-18 all-index-products fables-second-hover-color border-0 p-0
                                        position-absolute d-block pt-4 pt-md-0 z-index ">
                                     <span class="underline">{% trans "To'liq ko'rish" %}</span>

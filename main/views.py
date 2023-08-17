@@ -43,7 +43,7 @@ def page_view(request, name):
 
 
 def direktors_view(request):
-    director = Director.objects.get(pk=1)
+    director = Director.objects.get(position='Ijrochi Direktor')
     zamdirectors = Director.objects.all()
     content = {
         'director': director,

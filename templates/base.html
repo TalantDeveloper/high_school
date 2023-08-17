@@ -41,11 +41,8 @@
     <link href="{% static 'assets/custom/css/custom.css' %}" rel="stylesheet">
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
     <link href="{% static 'assets/custom/css/custom-responsive.css' %}" rel="stylesheet">
-
-
 </head>
 <body>
-
 <div class="search-section">
     <a class="close-search" href="#"></a>
     <div class="d-flex justify-content-center align-items-center h-100">
@@ -105,7 +102,8 @@
 
             </div>
             <div class="col-12 col-sm-5 col-lg-4 text-right">
-                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> {% trans "Telefon" %} : (888) 6000
+                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> {% trans "Telefon" %}
+                    : (888) 6000
                     6000 - (888) 6000 6000</p>
             </div>
             <div class="col-12 col-sm-5 col-lg-3 text-right">
@@ -142,273 +140,59 @@
                                     {% trans "Akademik litsey" %}
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="sub-nav1">
-                                    <li><a class="dropdown-item" href="{% url 'main:direktors' %}">{% trans "Ma'muriyat" %}</a></li>
+                                    <li><a class="dropdown-item"
+                                           href="{% url 'main:direktors' %}">{% trans "Ma'muriyat" %}</a></li>
                                     <li><a class="dropdown-item" href="#">{% trans "Ilmiy hayot" %}</a></li>
                                     <li><a class="dropdown-item" href="#">{% trans "Ijtimoiy hayot" %}</a></li>
-                                    <li><a class="dropdown-item" href="{% url 'main:about' %}">{% trans "Litsey haqida" %}</a></li>
+                                    <li><a class="dropdown-item"
+                                           href="{% url 'main:about' %}">{% trans "Litsey haqida" %}</a></li>
                                 </ul>
                             </li>
 
-                            <!--
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav2" data-toggle="dropdown"
-                                                   aria-haspopup="true" aria-expanded="false">
-                                                    Features
-                                                </a>
-                                                <ul class="dropdown-menu" aria-labelledby="sub-nav2">
 
-                                                    <li><a class="dropdown-item dropdown-toggle" href="#">Headers</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 1</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Header
-                                                                        1 Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 1
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 1
-                                                                        Dark</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header Mega
-                                                                        menu</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 2</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Header
-                                                                        2 Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 2
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 2
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 3</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Header
-                                                                        3 Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 3
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 3
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 4</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Header
-                                                                        4 Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 4
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 4
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Header 5</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Header
-                                                                        5 Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 5
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Header 5
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-
-                                                        </ul>
-                                                    </li>
-                                                    <li><a class="dropdown-item dropdown-toggle" href="#">Footers</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 1</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Footer 1
-                                                                        Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 1
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 1
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 2</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Footer 2
-                                                                        Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 2
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 2
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 3</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Footer 3
-                                                                        Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 3
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 3
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a class="dropdown-item dropdown-toggle" href="#">Footer 4</a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">Footer 4
-                                                                        Transparent</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 4
-                                                                        Light</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Footer 4
-                                                                        Dark</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Team Members</a></li>
-                                                    <li><a class="dropdown-item" href="#">Pricing Table</a></li>
-                                                    <li><a class="dropdown-item" href="#">testimonials</a></li>
-                                                    <li><a class="dropdown-item" href="#">Blog</a></li>
-                                                    <li><a class="dropdown-item" href="#">Counters</a></li>
-                                                    <li><a class="dropdown-item" href="#">Image Hover Effects</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                            -->
-
-                            <!--
-                                                        <li class="nav-item dropdown">
-                                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav3" data-toggle="dropdown"
-                                                               aria-haspopup="true" aria-expanded="false">
-                                                                About
-                                                            </a>
-                                                            <ul class="dropdown-menu" aria-labelledby="sub-nav3">
-                                                                <li><a class="dropdown-item" href="#">About 1</a></li>
-                                                                <li><a class="dropdown-item" href="#">About 2</a></li>
-                                                                <li><a class="dropdown-item" href="#">About 3</a></li>
-                                                            </ul>
-                                                        </li>
-
-                               -->
-                            <li><a class="dropdown-item nav-link" href="{% url 'main:teachers' %}">{% trans "Ustozlar" %} </a></li>
-                            <li><a class="dropdown-item nav-link" href="{% url 'main:news' %}">{% trans "Yangililar" %} </a></li>
-
-                            <!--
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="sub-nav4" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Yangiliklar
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="sub-nav4">
-                                    <li><a class="dropdown-item" href="{% url 'main:news' %}">Yangililar </a></li>
-                                    <li><a class="dropdown-item" href="#">Product Single</a></li>
-                                </ul>
-                            </li>
-                -->
-                            <!--
-
-                                         <li class="nav-item dropdown">
-                                             <a class="nav-link dropdown-toggle" href="#" id="sub-nav5" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                 Blog
-                                             </a>
-                                             <ul class="dropdown-menu" aria-labelledby="sub-nav5">
-                                                 <li><a class="dropdown-item" href="#">Blog Cat 1</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Cat 2</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Cat 3</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Cat Masonry</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Details 1</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Details 2</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Details 3</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Single image</a></li>
-                                                 <li><a class="dropdown-item" href="#">Blog Single Slider</a>
-                                                 </li>
-                                                 <li><a class="dropdown-item" href="#">Blog Single Video</a>
-                                                 </li>
-                                                 <li><a class="dropdown-item" href="#">Blog Timeline</a></li>
-                                             </ul>
-                                         </li>
-
-                            -->
+                            <li><a class="dropdown-item nav-link"
+                                   href="{% url 'main:teachers' %}">{% trans "Ustozlar" %} </a></li>
+                            <li><a class="dropdown-item nav-link"
+                                   href="{% url 'main:news' %}">{% trans "Yangililar" %} </a></li>
 
 
-                            <li><a class="dropdown-item nav-link" href="{% url 'main:about' %}">{% trans "Biz haqimizda" %} </a></li>
+                            <li><a class="dropdown-item nav-link"
+                                   href="{% url 'main:about' %}">{% trans "Biz haqimizda" %} </a></li>
 
-                            <!--
-                                           <li class="nav-item dropdown">
-                                               <a class="nav-link dropdown-toggle" href="#" id="sub-nav6" data-toggle="dropdown"
-                                                  aria-haspopup="true" aria-expanded="false">
-                                                   Pages
-                                               </a>
-                                               <ul class="dropdown-menu" aria-labelledby="sub-nav6">
-                                                   <li><a class="dropdown-item" href="#">404</a></li>
-                                                   <li><a class="dropdown-item" href="#">Comming Soon</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery Filter</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery Filter
-                                                       Masonry</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery History</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery History 2</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery Single</a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery Timeline </a></li>
-                                                   <li><a class="dropdown-item" href="#">Gallery Timeline 2</a>
-                                                   </li>
-                                               </ul>
-                                           </li>
-
-                            -->
 
                             <li><a class="dropdown-item nav-link" href="{% url 'main:contact_us' %}">
                                 {% trans "Biz bilan bo'glanish" %}
                             </a></li>
 
-                            <!--
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="{% url 'main:contact_us' %}" id="sub-nav7"
-                                                   data-toggle="dropdown"
-                                                   aria-haspopup="true" aria-expanded="false">
-                                                    Biz bilan bog'lanish
-                                                </a>
-                                                <ul class="dropdown-menu" aria-labelledby="sub-nav7">
-                                                    <li><a class="dropdown-item" href="{% url 'main:contact_us' %}">Biz bilan
-                                                        bo'glanish</a></li>
-                                                    <li><a class="dropdown-item" href="#">Contact Us 2</a></li>
-                                                    <li><a class="dropdown-item" href="#">Contact Us 3</a></li>
-                                                </ul>
-                                            </li>
 
-                            -->
 
                         </ul>
 
                     </div>
                 </nav>
             </div>
-
         </div>
     </div>
 </div>
 <!-- /End Fables Navigation -->
 
+<!-- Start Content -->
+    {% block content %}
 
-{% block content %}
+    {% endblock %}
+<!-- End Content -->
 
-{% endblock %}
-
-<!-- Start Footer 2 Background Image  -->
+<!-- Start Footer -->
 <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img
+                <a href="{% url 'main:welcome' %}" class="fables-second-border-color border-bottom pb-3 d-block mt-minus-13"><img
                         src="{% static '/images/logo.png' %}" alt="fables template" width="50"></a>
                 <p class="font-15 fables-third-text-color">
-                    t is a asffsdf f asdgsd gg fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters.
-                    <br><br>
-                    t is a aegsysdg sgsdg sdfgsd fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout.
+                    {% trans "Barcha huquqlar himoyalangan. Saytdagi barcha huquqlar O'zbekiston Respublikasi qonunlariga, shu jumladan mualliflik huquqi va turdosh huquqlarga muvofiq himoya qilinadi. Sayt materiallaridan foydalanganda, Toshkent davlat stomatologiya instituti Akademik Litseyi saytiga havola ko'rsatilishi shart. Diqqat! Agar siz matnda xatoliklarni aniqlasangiz, ularni belgilab, web sayt ma'murini xabardor qilish uchun biz bilan bog'lanishingizni so'raymiz." %}
                 </p>
-
             </div>
-
             <div class="col-12 col-sm-6 col-lg-4">
                 <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">{% trans "Biz bilan bog'lanish" %}</h2>
                 <div class="my-3">
@@ -444,25 +228,20 @@
                     <li><a href="{% url 'main:news' %}">{% trans "Yangiliklar" %}</a></li>
                 </ul>
             </div>
-
         </div>
-
     </div>
 </div>
 <div class="copyright fables-main-background-color mt-0 border-0 white-color">
     <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
-        <li><a href="mail:ergashovbotirjon4@gmail.com" target="_blank"><i class="fab fa-google-plus-square"></i></a>
-        </li>
+        <li><a href="https://t.me/talant_dev" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+        <li><a href="https://github.com/TalantDeveloper" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.instagram.com/botirjon642" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        {#        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>#}
-        <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/botirjon-ergashov-81a06525b/" target="_blank"><i class="fab fa-linkedin "></i></a></li>
     </ul>
-    <p class="mb-0">{% trans "Copyright © TalantDeveloper 2023. Barcha huquqlar himoyalangan." %} </p>
-
+    <p class="mb-0">Copyright © <a href="https://t.me/talant_dev" target="_blank">TalantDeveloper</a> 2023. {% trans "Barcha huquqlar himoyalangan." %} </p>
 </div>
 
-<!-- /End Footer 2 Background Image -->
+<!-- /End Footer -->
 
 
 <script src="{% static 'assets/vendor/jquery/jquery-3.3.1.min.js' %}"></script>

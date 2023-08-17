@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     
     'ckeditor',
     'ckeditor_uploader',
+    # mathematic arifmetic template
+    'django_template_maths',
 ]
 
 MIDDLEWARE = [
