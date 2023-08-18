@@ -69,6 +69,8 @@ class UserMessages(models.Model):
     subject = models.CharField(max_length=250, verbose_name='Subject')
     message = models.TextField(verbose_name='Message')
 
+    create_at = models.DateTimeField(auto_now_add=True)
+
     def __str__(self):
         return self.subject
 

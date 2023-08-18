@@ -29,19 +29,19 @@
     <!-- Start page content -->
     <div class="container">
         <div class="row my-4 my-md-5">
+        <!-- Start Last news -->
             <div class="col-12 col-md-4 col-lg-3">
                 <div class="fables-store-search mb-4">
                     <form method="get" action="{% url 'main:news' %}">
-                        {% csrf_token %}
+
                         <div class="input-icon">
                             <span class="fables-iconsearch-icon fables-input-icon"></span>
-                            <input type="text"
+                            <input type="text" name="search"
                                    class="form-control rounded-0 form-control rounded-0 font-14 fables-store-input pl-5 py-2"
                                    placeholder="Search Product">
                         </div>
                     </form>
                 </div>
-
                 <h2 class="font-16 semi-font fables-forth-text-color fables-light-gary-background  p-3 my-4">
                     {% trans "So'ngi yangiliklar" %}
                 </h2>
@@ -60,19 +60,18 @@
                         </div>
                     </div>
                 {% endfor %}
-
-
             </div>
+
             <div class="col-12 col-md-8 col-lg-9">
                 <div class="row mb-4">
-
                     <div class="col-4 col-md-6 col-lg-2 offset-lg-6 text-center pl-0 d-none d-lg-block">
                         <span class="fables-iconlist fa-fw fables-view-btn fables-list-btn fables-third-border-color fables-third-text-color"></span>
                         <span class="fables-icongrid active fa-fw fables-view-btn fables-grid-btn fables-third-border-color fables-third-text-color"></span>
                     </div>
                 </div>
-                <div class="row">
 
+            <!-- start news -->
+                <div class="row">
                     {% for new in news %}
                         <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
                             <div class="card rounded-0 mb-4">
@@ -80,17 +79,26 @@
                                     <div class="fables-product-img col-12">
                                         <img class="card-img-top rounded-0"
                                              src="{{ new.image.url }}"
-                                             alt="dress fashion" height="200">
+                                             alt="dress fashion" height="180">
                                         <div class="fables-img-overlay">
                                             <ul class="nav fables-product-btns">
-                                                <li><a href="{% url 'main:new' new.pk %}"
-                                                       class="fables-product-btn"><span
-                                                        class="fables-iconeye"></span></a></li>
-                                                <li><a href="" class="fables-product-btn"><span
-                                                        class="fables-iconcompare"></span></a></li>
                                                 <li>
-                                                    <button class="fables-product-btn"><span
-                                                            class="fables-iconheart"></span></button>
+                                                    <a href="{% url 'main:new' new.pk %}"
+                                                       class="fables-product-btn">
+                                                        <span class="fables-iconeye"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="fables-product-btn">
+                                                        <span class="fables-iconcompare">
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <button class="fables-product-btn">
+                                                        <span class="fables-iconheart">
+                                                        </span>
+                                                    </button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -102,10 +110,11 @@
                                                 {{ new.title |slice:68 }}
                                             </a>
                                         </p>
-                                        <br>
+                                        <hr>
                                         <span class="fables-icondata fables-second-text-color mr-1"></span>
-                                        <span class="mr-3 font-15"> {{ new.create_at|date:"d:m:Y" }}</span>|
-                                        <span class="mr-3 font-15"> {{ new.create_at|time:"H:i" }}</span>
+                                        <span class="mr-3 font-15">{{ new.create_at|date:"d:m:Y"}}</span>|<span class="mr-3 font-15">{{ new.create_at|time:"H:i" }}</span>
+                                        <br>
+
                                         <p class="fables-product-info">
                                             <a href="{% url 'main:new' new.id %}"
                                                class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-2 px-xl-4">
@@ -116,9 +125,10 @@
                             </div>
                         </div>
                     {% endfor %}
-
-
                 </div>
+            <!-- End news -->
+
+            <!-- Start pagination -->
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
                         <li class="page-item"><a
@@ -136,9 +146,9 @@
                                 href="#">20</a></li>
                     </ul>
                 </nav>
+            <!-- End pagination -->
             </div>
         </div>
-
     </div>
     <!-- /End page content -->
 

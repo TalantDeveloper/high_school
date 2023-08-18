@@ -62,9 +62,15 @@
                         <span class="fables-icondata fables-second-text-color mr-1"></span>
                         <span class="mr-3 font-15">{{ new.create_at|date:"d:m:Y" }}</span>|
                         <span class="mr-3 font-15">{{ new.create_at|time:"H:i" }}</span>
-                        <span class="fables-iconeye fables-second-text-color mr-1"></span>
-                        <a href="" class="fables-forth-text-color fables-second-hover-color position-relative z-index">
-                            123
+
+                        <a href="#" class="fables-forth-text-color fables-second-hover-color position-relative z-index">
+                            <span class="fables-iconeye fables-second-text-color mr-1"></span>
+                            {{ new.sees }}
+                        </a>
+                        |
+                        <a href="#" class="fables-forth-text-color fables-second-hover-color position-relative z-index">
+                            <span class="fables-iconheart fables-second-text-color mr-1"></span>
+                            {{ new.likes }}
                         </a>
                     </div>
                     <div class="col-12 col-md-3 col-lg-2 text-right mt-3 mt-md-0 text-center text-md-right">
@@ -96,9 +102,9 @@
                         <div class="fables-forth-text-color font-14  my-2">
                             <span class="fables-icondata fables-second-text-color mr-1"></span>
                             <span class="mr-3"> {{ all_new.create_at }} </span>
-                            <span class="fables-iconcomment fables-second-text-color mr-1"></span>
+                            <span class="fables-iconeye fables-second-text-color mr-1"></span>
                             <a href=""
-                               class="fables-forth-text-color fables-second-hover-color position-relative z-index">2</a>
+                               class="fables-forth-text-color fables-second-hover-color position-relative z-index">{{ all_new.sees }}</a>
                         </div>
                         <h2 class="font-18 semi-font">
                             <a href="{% url 'main:new' all_new.id %}"
@@ -107,7 +113,7 @@
                             </a>
                         </h2>
                         <a href="" class="btn fables-second-text-color fables-main-hover-color font-14 p-0 my-3">
-                            Read More
+                            {% trans "O'qish" %}
                             <i class="fas fa-chevron-right"></i></a>
                     </div>
                 {% endfor %}

@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import New, Director, Page, Teacher, UserMessages
+from .forms import UserMessagesForm
+from django.contrib import messages
 
 
 def welcome_view(request):
@@ -16,7 +18,11 @@ def welcome_view(request):
 
 def news_view(request):  # tamom  # pagination qilish kerak
     news = New.objects.all()
-    news_orders = New.objects.all()
+    if request.method == 'GET':
+        search = request.GET.get('search')
+        news_orders = New.objects.filter(title__icontains=search)[:12]
+    else:
+        news_orders = New.objects.all()[:12]
     content = {
         'news': news,
         'news_orders': news_orders,
@@ -27,6 +33,8 @@ def news_view(request):  # tamom  # pagination qilish kerak
 def new_view(request, pk):  # tamom
     all_news = New.objects.all()[:6]
     new = New.objects.get(pk=pk)
+    new.sees_add()
+    new.likes_add()
     content = {
         'new': new,
         'news': all_news
@@ -68,20 +76,13 @@ def about_view(request):
 
 def contact_us_view(request):
     if request.method == "POST":
-        first_name = request.POST.get('first_name')
-        last_name = request.POST.get('last_name')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-        message = request.POST.get('message')
-        user_message = UserMessages.objects.create(
-            first_name=first_name,
-            last_name=last_name,
-            email=email,
-            subject=subject,
-            message=message,
-        )
-        user_message.save()
-        return redirect('/')
+        form = UserMessagesForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f'{form.first_name} {form.last_name} your message sending :)')
+            return redirect('/')
+        else:
+            return render(request, 'main/contact_us.html', {'form': form})
     return render(request, 'main/contact_us.html')
 
 

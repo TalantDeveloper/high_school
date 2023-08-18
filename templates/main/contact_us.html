@@ -17,10 +17,14 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-                    <li class="breadcrumb-item"><a href="{% url 'main:welcome' %}"
-                                                   class="fables-second-text-color">{% trans "Asosiy" %}</a></li>
-                    <li class="breadcrumb-item active"
-                        aria-current="page">{% trans "Biz bilan bog'lanish" %}</li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'main:welcome' %}" class="fables-second-text-color">
+                            {% trans "Asosiy" %}
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        {% trans "Biz bilan bog'lanish" %}
+                    </li>
                 </ol>
             </nav>
         </div>
@@ -34,7 +38,9 @@
             <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s"
                  data-wow-delay=".4s">
                 <span class="fables-iconmap-icon fa-2x fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
-                <h2 class="font-16 semi-font fables-second-text-color my-3">{% trans "Manzil" %}</h2>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">
+                    {% trans "Manzil" %}
+                </h2>
                 <p class="font-14 fables-forth-text-color">
                     {% trans "Toshkent, Yashnobod tumani, Sultonali Mashhadiy koʻchasi, 217/2" %}
                 </p>
@@ -43,7 +49,9 @@
             <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s"
                  data-wow-delay=".8s">
                 <span class="fables-iconphone fa-2x  fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
-                <h2 class="font-16 semi-font fables-second-text-color my-3">{% trans "Mail & Telefon Nomer" %}</h2>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">
+                    {% trans "Mail & Telefon Nomer" %}
+                </h2>
                 <p class="font-14 fables-forth-text-color">
                     <a href="mainto:stomalitsey@gmail.com" class="fables-second-text-color">
                         astomalitsey@gmail.com
@@ -58,7 +66,9 @@
             <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s"
                  data-wow-delay="1.2s">
                 <span class="fables-iconshare-icon fa-2x fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
-                <h2 class="font-16 semi-font fables-second-text-color my-3">{% trans "Ijtimoiy tarmoqlarda" %}</h2>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">
+                    {% trans "Ijtimoiy tarmoqlarda" %}
+                </h2>
                 <ul class="nav fables-contact-social-links">
                     <li><a href="#" target="_blank"><i class="fab fa-facebook-f fables-forth-text-color fa-fw"></i></a>
                     </li>
@@ -96,11 +106,12 @@
     <div class="container">
         <div class="row my-4 my-md-5">
             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                <h3 class="font-35 font-weight-bold fables-second-text-color text-center mb-3">{% trans "Biz bilan bog'lanish" %}</h3>
+                <h3 class="font-35 font-weight-bold fables-second-text-color text-center mb-3">
+                    {% trans "Biz bilan bog'lanish" %}
+                </h3>
                 <p class="fables-forth-text-color text-center">
                     {% trans "Sizni qiziqtirgan savolingiz bo'yicha pastdagi formani to'ldirib yuborishingiz mumkin. Email manzilingizga javob yuboriladi." %}
                 </p>
-
             </div>
         </div>
         <div class="row overflow-hidden">
@@ -110,26 +121,27 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" name="first_name" class="form-control p-3 rounded-0"
-                                   placeholder="{% trans 'Ismingiz' %}">
+                                   placeholder="{% trans 'Ismingiz' %}" required value="{{ form.first_name.data }}">
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" name="last_name" class="form-control p-3 rounded-0"
-                                   placeholder="{% trans 'Familyangiz' %}">
+                                   placeholder="{% trans 'Familyangiz' %}" required value="{{ form.last_name.data }}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="email" name="email" class="form-control p-3 rounded-0" placeholder="Email">
+                            <input type="email" name="email" class="form-control p-3 rounded-0" placeholder="Email" required
+                            value="{{ form.email.data }}">
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" name="subject" class="form-control p-3 rounded-0"
-                                   placeholder="{% trans 'Mavzu' %}">
+                                   placeholder="{% trans 'Mavzu' %}" required value="{{ form.subject.data }}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <textarea class="form-control p-3 rounded-0" name="message"
-                                      placeholder="{% trans 'Habar' %}" rows="4"></textarea>
+                                      placeholder="{% trans 'Habar' %}" rows="4">{{ form.message.data }}</textarea>
                         </div>
                     </div>
                     <div class="form-row">
@@ -141,15 +153,10 @@
                         </div>
                     </div>
                 </form>
-
-
             </div>
-
         </div>
     </div>
 
     <!-- /End page content -->
-
-
 
 {% endblock %}

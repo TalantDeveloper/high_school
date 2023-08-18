@@ -113,9 +113,19 @@
 
         </div>
     </div>
+
 </div>
 
 <!-- /End Top Header -->
+{% if messages %}
+    <div class="container bg-white">
+    {% for message in messages %}
+    	<h3 class="text-primary">{{ message }}</h3>
+
+    {% endfor %}
+    </div>
+{% endif %}
+
 
 <!-- Start Fables Navigation -->
 <div class="fables-navigation fables-main-background-color py-3 py-lg-0">
@@ -165,7 +175,6 @@
                             </a></li>
 
 
-
                         </ul>
 
                     </div>
@@ -177,9 +186,9 @@
 <!-- /End Fables Navigation -->
 
 <!-- Start Content -->
-    {% block content %}
+{% block content %}
 
-    {% endblock %}
+{% endblock %}
 <!-- End Content -->
 
 <!-- Start Footer -->
@@ -187,7 +196,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <a href="{% url 'main:welcome' %}" class="fables-second-border-color border-bottom pb-3 d-block mt-minus-13"><img
+                <a href="{% url 'main:welcome' %}"
+                   class="fables-second-border-color border-bottom pb-3 d-block mt-minus-13"><img
                         src="{% static '/images/logo.png' %}" alt="fables template" width="50"></a>
                 <p class="font-15 fables-third-text-color">
                     {% trans "Barcha huquqlar himoyalangan. Saytdagi barcha huquqlar O'zbekiston Respublikasi qonunlariga, shu jumladan mualliflik huquqi va turdosh huquqlarga muvofiq himoya qilinadi. Sayt materiallaridan foydalanganda, Toshkent davlat stomatologiya instituti Akademik Litseyi saytiga havola ko'rsatilishi shart. Diqqat! Agar siz matnda xatoliklarni aniqlasangiz, ularni belgilab, web sayt ma'murini xabardor qilish uchun biz bilan bog'lanishingizni so'raymiz." %}
@@ -236,9 +246,11 @@
         <li><a href="https://t.me/talant_dev" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
         <li><a href="https://github.com/TalantDeveloper" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.instagram.com/botirjon642" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/botirjon-ergashov-81a06525b/" target="_blank"><i class="fab fa-linkedin "></i></a></li>
+        <li><a href="https://www.linkedin.com/in/botirjon-ergashov-81a06525b/" target="_blank"><i
+                class="fab fa-linkedin "></i></a></li>
     </ul>
-    <p class="mb-0">Copyright © <a href="https://t.me/talant_dev" target="_blank">TalantDeveloper</a> 2023. {% trans "Barcha huquqlar himoyalangan." %} </p>
+    <p class="mb-0">Copyright © <a href="https://t.me/talant_dev" target="_blank">TalantDeveloper</a>
+        2023. {% trans "Barcha huquqlar himoyalangan." %} </p>
 </div>
 
 <!-- /End Footer -->
