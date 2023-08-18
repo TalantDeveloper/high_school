@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-xhpwlj#^+na)d0)ip5_nj^a!bmkj2n)ise5fnluagql6*!=1is
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '10.222.222.43', 'highschool.tsdi.uz']
 
 
 # Application definition
@@ -116,8 +116,12 @@ CKEDITOR_CONFIGS = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'litsey',
+        'USER': 'litsey',
+        'PASSWORD': 'Qosim123!',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
