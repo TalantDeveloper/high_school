@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-xhpwlj#^+na)d0)ip5_nj^a!bmkj2n)ise5fnluagql6*!=1is
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '10.222.222.43', 'highschool.tsdi.uz']
-
+CSRF_TRUSTED_ORIGINS = ["https://yotoqxona.tsdi.uz"]
 
 # Application definition
 
