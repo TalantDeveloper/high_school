@@ -43,11 +43,12 @@ def page_view(request, name):
 
 
 def direktors_view(request):
-    director = Director.objects.get(position='Ijrochi Direktor')
+    director = Director.objects.get(position_uz='Ijrochi Direktor')
     zamdirectors = Director.objects.all()
+
     content = {
         'director': director,
-        'zamdirectors': zamdirectors
+        'zamdirectors': zamdirectors[1:]
     }
     return render(request, 'main/direktor_zam.html', content)
 

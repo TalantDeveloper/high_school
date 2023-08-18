@@ -12,8 +12,19 @@ class New(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
     upload_at = models.DateTimeField(auto_now=True)
 
+    sees = models.IntegerField(verbose_name='See')
+    likes = models.IntegerField(verbose_name='Like')
+
     def __str__(self):
         return self.title
+
+    def sees_add(self):
+        self.sees = self.sees + 1
+        return self.save()
+
+    def likes_add(self):
+        self.likes = self.likes + 1
+        return self.save()
 
 
 class Director(models.Model):
@@ -24,7 +35,6 @@ class Director(models.Model):
     phone_number = models.CharField(max_length=50)
 
     content = RichTextUploadingField(null=True, blank=True, verbose_name='Malumot')  # translation
-
     position = models.CharField(max_length=250, verbose_name='Lavozimi')  # translation
 
     def __str__(self):
@@ -44,6 +54,7 @@ class Teacher(models.Model):
 
 class Page(models.Model):
     title = models.CharField(max_length=300, verbose_name='Title')  # translation
+    image = models.ImageField(null=True, blank=True, upload_to='./pages/')
     content = RichTextUploadingField(verbose_name='Malumot')
     page_name = models.CharField(max_length=300, verbose_name='Page Name')
 

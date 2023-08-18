@@ -34,9 +34,7 @@
                     <div class="col-6 col-md-3 mb-4 mb-lg-5">
                         <div class="card fables-team-block fables-second-hover-text-color fables-team-border fables-second-border-color">
                             <div class="image-container shine-effect">
-                                <a href="{{ teacher.image.url }}" target="_blank">
-                                    <img class="w-100" src="{{ teacher.image.url }}" alt="Card image cap">
-                                </a>
+                                    <img class="w-100" src="{{ teacher.image.url }}" alt="Card image cap" height="350">
                             </div>
                             <div class="card-body">
                                 <h5>
@@ -49,8 +47,8 @@
                                     {{ teacher.position }}
                                 </p>
                                 <ul class="nav fables-team-social-links">
-                                    <li><a href="#" target="_blank"><span
-                                            class="fables-icongoogle-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
+                                    <li><a href="tel:{{ teacher.phone_number }}"><span
+                                            class="fables-iconphone fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
                                     </li>
                                     <li><a href="#" target="_blank"><span
                                             class="fables-iconwhatapp-icon fables-forth-text-color fables-fifth-border-color fables-team-social-icon"></span></a>
@@ -66,9 +64,7 @@
                         </div>
                     </div>
                 {% endfor %}
-
             </div>
-
         </div>
     </div>
 
