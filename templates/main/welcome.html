@@ -61,9 +61,8 @@
                                             <div class="col-12 col-md-9 pl-md-0">
                                                 <h2 class="text-white font-19 semi-font mb-2"> {% trans "Tabbiy fanlar" %}</h2>
                                                 <div class="font-14 text-white">
-                                                    {% trans "Astronomiya | Biologiya | Kimyo | Geografiya | Fizika kabi fanlar to'liq o'rgatiladi." %}
+                                                    {% trans "Kimyo va Biologiya fanlari to'liq o'rgatiladi." %}
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -76,48 +75,11 @@
                                             </div>
                                             <div class="col-12 col-md-9 pl-md-0">
                                                 <h2 class="text-white font-19 semi-font mb-2">
-                                                    {% trans "Ilmiy fanlar" %}
+                                                    {% trans "Iltimoiy gumanitar" %}
                                                 </h2>
                                                 <div class="font-14 text-white">
-                                                    Lorem ipsum dolor sit amet adipiscing elit. Aenean ac lorem pretium
-                                                    laoreet enim at.
+                                                    {% trans "Bilogiya va Ona tili fanlari to'liq o'rgatiladi." %}
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6 pb-lg-5 mt-4 mt-lg-0 wow fadeInDown"
-                                         data-wow-delay="1.2s">
-                                        <div class="row text-center text-md-left">
-                                            <div class="col-12 col-md-3 col-xl-2 mb-3 mb-md-0">
-                                                <span class="fables-iconfile fables-second-text-color font-40"></span>
-                                            </div>
-                                            <div class="col-12 col-md-9 pl-md-0">
-                                                <h2 class="text-white font-19 semi-font mb-2">
-                                                    {% trans "Aniq fanlar" %}
-                                                </h2>
-                                                <div class="font-14 text-white">
-                                                    Lorem ipsum dolor sit amet adipiscing elit. Aenean ac lorem pretium
-                                                    laoreet enim at.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6 pb-lg-5 mt-4 mt-lg-0 wow fadeInDown"
-                                         data-wow-delay="1.6s">
-                                        <div class="row text-center text-md-left">
-                                            <div class="col-12 col-md-3 col-xl-2 mb-3 mb-md-0">
-                                                <span class="fables-iconhead-set-light fables-second-text-color font-40"></span>
-                                            </div>
-                                            <div class="col-12 col-md-9 pl-md-0">
-                                                <h2 class="text-white font-19 semi-font mb-2">Free Updates &
-                                                    Support</h2>
-                                                <div class="font-14 text-white">
-                                                    Lorem ipsum dolor sit amet adipiscing elit. Aenean ac lorem pretium
-                                                    laoreet enim at.
-                                                </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -143,37 +105,30 @@
                     </span>
                 </h2>
                 <p class="fables-forth-text-color my-3 wow fadeInLeft">
-                    Toshkent Davlat Stomatologiya Instituti Akademik Litseyida Tabiiy fanlar shu jumladan Kimyo va
-                    Biologiya fanlari chuqurlashtirilgan ravishda o'qitiladi. Bizni bitirgan o'quvchilar 86% izi Oliy O'quv yurtlariga
-                    o'qishga kirishadi. O'zbek va Rus tillarida fakultetlarimiz bor.
+                    {% trans "Toshkent Davlat Stomatologiya Instituti Akademik Litseyida Tabiiy fanlar shu jumladan Kimyo va Biologiya fanlari chuqurlashtirilgan ravishda o'qitiladi. Bizni bitirgan o'quvchilar 86% izi Oliy o'quv yurtlariga o'qishga kirishadi. O'zbek va Rus tillarida fakultetlarimiz bor. Ta'lim maskanida darslar an'anaviy tazrda o'tkaziladi, o'quvchilarning tabbiy fanlarni chuqur egallashlari uchun yetarli sharoitlar yaratilgan. Labaratoriya xonalarida va ma'ruza xonalarida darslar olib boriladi." %}
                 </p>
                 <div class="position-relative mb-3 wow bounceInDown">
                     <p class="fables-fifth-text-color">
                         <span class="fables-iconDiagonal-arrow"></span>
-                        Ta'lim tashkiloti elektron pochtasi <a href="mailto:stomalitsey@gmail.com">stomalitsey@gmail.com</a>
+                        {% trans "Ta'lim tashkiloti elektron pochtasi: " %} <a href="mailto:stomalitsey@gmail.com">stomalitsey@gmail.com</a>
                     </p>
                 </div>
                 <div class="position-relative mb-3 wow bounceInDown">
                     <p class="fables-fifth-text-color">
                         <span class="fables-iconDiagonal-arrow"></span>
-                        Talim tashkiloti sayti <a href="https://litsey.tsdi.uz/">litsey.tsdi.uz</a>
+                        {% trans "Talim tashkiloti sayti: " %}<a href="https://litsey.tsdi.uz/">litsey.tsdi.uz</a>
                     </p>
                 </div>
                 <div class="position-relative mb-3 wow bounceInDown">
                     <p class="fables-fifth-text-color">
                         <span class="fables-iconDiagonal-arrow"></span>
-                        Lorem ipsum dolor sit amet adipiscing elit.tur adipiscing elit.
+                        {% trans "Ishonch telefon nomeri: " %} <a href="tel:+998712353245">+998 71 235 32 45</a>
                     </p>
                 </div>
-                <div class="position-relative mb-3 wow bounceInDown">
-                    <p class="fables-fifth-text-color">
-                        <span class="fables-iconDiagonal-arrow"></span>
-                        Lorem ipsum dolor sit amet adipiscing elit.tur adipiscing elit.
-                    </p>
-                </div>
+
                 <a href="{% url 'main:about' %}"
                    class="btn fables-second-background-color white-color white-color-hover py-2 px-4 my-2 rounded-0 font-18">
-                    Ko'proq bilish
+                    {% trans "Ko'proq bilish" %}
                 </a>
 
             </div>
@@ -387,415 +342,70 @@
         <div class="container">
             <div class="owl-carousel owl-theme nav-0 carousel-items-6 dots-0">
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-1.jpg' %}" alt="Fables Template"
-                         class="fables-partner-carousel-img">
+                    <a href="https://www.lex.uz/" target="_blank">
+                        <img src="{% static 'images/partner/lex.png' %}" alt="Fables Template"
+                             class="fables-partner-carousel-img">
+                    </a>
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-2.jpg' %}" alt="Fables Template"
+                    <a href="https://ssv.uz/" target="_blank">
+                        <img src="{% static 'images/partner/ssv.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
+
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-1.jpg' %}" alt="Fables Template"
+                    <a href="https://www.gov.uz/uz" target="_blank">
+                        <img src="{% static 'images/partner/hportal.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
+
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-2.jpg' %}" alt="Fables Template"
+                    <a href="https://ziyonet.uz/" target="_blank">
+                        <img src="{% static 'images/partner/ziyonet.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
+
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-1.jpg' %}" alt="Fables Template"
+                    <a href="https://my.gov.uz/" target="_blank">
+                        <img src="{% static 'images/partner/interaktive.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
+
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-2.jpg' %}" alt="Fables Template"
+                    <a href="https://edu.uz/uz" target="_blank">
+                        <img src="{% static 'images/partner/ortamaxsus.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
+
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-1.jpg' %}" alt="Fables Template"
+                    <a href="https://xarid.uzex.uz/" target="_blank">
+                        <img src="{% static 'images/partner/uzex.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
+
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-2.jpg' %}" alt="Fables Template"
+                    <a href="https://xt-xarid.uz/" target="_blank">
+                        <img src="{% static 'images/partner/logotype.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
                 </div>
                 <div>
-                    <img src="{% static 'assets/custom/images/partner2-1.jpg' %}" alt="Fables Template"
+                    <a href="https://www.colgate.ru/" target="_blank">
+                        <img src="{% static 'images/partner/Colgate.png' %}" alt="Fables Template"
                          class="fables-partner-carousel-img">
+                    </a>
                 </div>
-                <div>
-                    <img src="{% static 'assets/custom/images/partner2-2.jpg' %}" alt="Fables Template"
-                         class="fables-partner-carousel-img">
-                </div>
+
 
             </div>
         </div>
     </div>
     <!-- End   Parteners Slider -->
 
-
-
-
 {% endblock %}
-
-
-
-{#    #}
-{#    <!--menu end-->#}
-{#    <!-- header-slider-area start -->   <!-- Welcome  -->#}
-{#    <section class="header-slider-area">#}
-{#        <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">#}
-{##}
-{#            <!-- Indicators -->#}
-{#            <ol class="carousel-indicators">#}
-{#                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>#}
-{#                <li data-target="#carousel-example-generic" data-slide-to="1"></li>#}
-{#            </ol>#}
-{##}
-{#            <!-- Wrapper for slides -->#}
-{#            <div class="carousel-inner" role="listbox">#}
-{#                <div class="item active">#}
-{#                    <div class="single-slide-item slide-1">#}
-{#                        <div class="container">#}
-{#                            <div class="row">#}
-{#                                <div class="col-sm-12">#}
-{#                                    <div class="single-slide-item-content">#}
-{#                                        <h2>{% trans 'Tibbiyot' %} <br> {% trans 'Akademik Litseyi' %}</h2>#}
-{#                                        <p>#}
-{#                                            {% trans 'Toshkent davlat Stomotologiya Instituti qoshidagi Akademik litsey' %}#}
-{#                                        </p>#}
-{#                                        <a href="{% url 'main:page' 'biz_haqimizda' %}">#}
-{#                                            <button type="button" class="slide-btn">#}
-{#                                                {% trans 'Biz haqimizda' %}#}
-{#                                            </button>#}
-{#                                        </a>#}
-{#                                        <a href="{% url 'main:page' 'biz_bilan_boglanish' %}">#}
-{#                                            <button type="button" class="slide-btn">#}
-{#                                                {% trans 'Biz bilan bog`lanish' %}#}
-{#                                            </button>#}
-{#                                        </a>#}
-{#                                    </div><!-- /.single-slide-item-content-->#}
-{#                                </div><!-- /.col-->#}
-{#                            </div><!-- /.row-->#}
-{#                        </div><!-- /.container-->#}
-{#                    </div><!-- /.single-slide-item-->#}
-{#                </div><!-- /.item .active-->#}
-{#                <div class="item">#}
-{#                    <div class="single-slide-item slide-2">#}
-{#                        <div class="container">#}
-{#                            <div class="row">#}
-{#                                <div class="col-sm-12">#}
-{#                                    <div class="single-slide-item-content">#}
-{#                                        <h2>Tibbiyot <br> Akademik Litseyi</h2>#}
-{#                                        <p>#}
-{#                                            {% trans 'Toshkent davlat Stomotologiya Instituti qoshidagi Akademik litsey' %}#}
-{##}
-{#                                        </p>#}
-{#                                        <a href="{% url 'main:page' 'biz_haqimizda' %}">#}
-{#                                            <button type="button" class="slide-btn">#}
-{#                                                {% trans 'Biz haqimizda' %}#}
-{#                                            </button>#}
-{#                                        </a>#}
-{#                                        <a href="{% url 'main:page' 'biz_bilan_boglanish' %}">#}
-{#                                            <button type="button" class="slide-btn">#}
-{#                                                {% trans 'Biz bilan bog`lanish' %}#}
-{#                                            </button>#}
-{#                                        </a>#}
-{##}
-{#                                    </div>#}
-{##}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div><!-- /.carousel-inner-->#}
-{##}
-{#            <!-- Controls -->#}
-{#            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">#}
-{#                <span class="lnr lnr-chevron-left"></span>#}
-{#            </a>#}
-{#            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">#}
-{#                <span class="lnr lnr-chevron-right"></span>#}
-{#            </a>#}
-{#        </div><!-- /.carousel-->#}
-{##}
-{#    </section><!-- /.header-slider-area-->#}
-{#    <!-- header-slider-area end -->#}
-{#    <!--we-do start -->  <!-- Litsey yo'nalishlari  -->#}
-{#    <section class="we-do">#}
-{#        <div class="container">#}
-{#            <div class="we-do-details">#}
-{#                <div class="section-header text-center">#}
-{#                    <h2>{% trans 'Akademik litseyda mavjud yo`nalishlar' %}</h2>#}
-{#                    <p>#}
-{#                        {% trans 'Akademik litseyda quyidagi n ta yo`nalishlar mavjud bo`lib, dars jarayonlarida har bir yo`nalish o`ziga xos ixtisoslashtirilgan fanlarni chuqurlashtirib olib boradi.' %}#}
-{#                    </p>#}
-{#                </div><!--/.section-header-->#}
-{#                <div class="we-do-carousel">#}
-{#                    <div class="row">#}
-{#                        <div class="col-sm-4 col-xs-12">#}
-{#                            <div class="single-we-do-box text-center minh">#}
-{#                                <div class="we-do-description yp">#}
-{#                                    <div class="we-do-info">#}
-{#                                        <div class="we-do-img">#}
-{#                                            <img src="{% static 'images/home/consultency.png' %}"#}
-{#                                                 alt="image of consultency"/>#}
-{#                                        </div><!--/.we-do-img-->#}
-{#                                        <div class="we-do-topics">#}
-{#                                            <h2>#}
-{#                                                <a>#}
-{#                                                    {% trans 'Tabiiy fanlar' %}#}
-{#                                                </a>#}
-{#                                            </h2>#}
-{#                                        </div><!--/.we-do-topics-->#}
-{#                                    </div><!--/.we-do-info-->#}
-{#                                </div><!--/.we-do-description-->#}
-{#                            </div><!--/.single-we-do-box-->#}
-{#                        </div><!--/.col-->#}
-{#                        <div class="col-sm-4 col-xs-12">#}
-{#                            <div class="single-we-do-box text-center minh">#}
-{#                                <div class="we-do-description yp">#}
-{#                                    <div class="we-do-info">#}
-{#                                        <div class="we-do-img">#}
-{#                                            <img src="{% static 'images/home/busisness_grow.png' %}"#}
-{#                                                 alt="image of business"/>#}
-{#                                        </div><!--/.we-do-img-->#}
-{#                                        <div class="we-do-topics">#}
-{#                                            <h2>#}
-{#                                                <a>#}
-{#                                                    {% trans 'Ijtimoiy fanlar' %}#}
-{#                                                </a>#}
-{#                                            </h2>#}
-{#                                        </div><!--/.we-do-topics-->#}
-{#                                    </div><!--/.we-do-info-->#}
-{#                                </div><!--/.we-do-description-->#}
-{#                            </div><!--/.single-we-do-box-->#}
-{#                        </div><!--/.col-->#}
-{#                        <div class="col-sm-4 col-xs-12">#}
-{#                            <div class="single-we-do-box text-center minh">#}
-{#                                <div class="we-do-description yp">#}
-{#                                    <div class="we-do-info">#}
-{#                                        <div class="we-do-img">#}
-{#                                            <img src="{% static 'images/home/support-logo.png' %}"#}
-{#                                                 alt="image of support"/>#}
-{#                                        </div><!--/.we-do-img-->#}
-{#                                        <div class="we-do-topics">#}
-{#                                            <h2>#}
-{#                                                <a>#}
-{#                                                    {% trans 'Aniq fanlar' %}#}
-{#                                                </a>#}
-{#                                            </h2>#}
-{#                                        </div><!--/.we-do-topics-->#}
-{#                                    </div><!--/.we-do-info-->#}
-{#                                </div><!--/.we-do-description-->#}
-{#                            </div><!--/.single-we-do-box-->#}
-{#                        </div><!--/.col-->#}
-{#                    </div><!--/.row-->#}
-{#                </div><!--/.we-do-carousel-->#}
-{#            </div><!--/.we-do-details-->#}
-{#        </div><!--/.container-->#}
-{#    </section><!--/.we-do-->#}
-{#    <!--we-do end-->#}
-{#    <!--about-us start -->  <!-- Welcome page -->#}
-{#    <section class="about-us">#}
-{#        <div class="container">#}
-{#            <div class="about-us-content">#}
-{#                <div class="row">#}
-{#                    <div class="col-sm-6">#}
-{#                        <div class="single-about-us">#}
-{#                            <div class="about-us-txt">#}
-{#                                <h2>{% trans 'Akademik litsey' %}</h2>#}
-{#                                <p>{% trans 'Toshkent davlat stomatologiya instituti akademik litseyi 2017 yil 18 noyabrda Toshkent pediatriya tibbiyot instituti 2-son akademik litseyi bazasida tashkil topgan. Akademik litsey tabiiy fanlar yo‘nalishiga ixtisoslashtirilgan. Akademik litseyda ta’lim olish o‘quvchilarga o‘z bilimlarini chuqurlashtirish va tanlagan ixtisosliklariga ega bo‘lishni ta’minlaydi. Akademik litsey bitiruvchilariga davlat tomonidan tasdiqlangan diplom beriladi.Akademik litseydaning o‘quvchilariga, birinchi navbatda iqtidorli, yuksak iste’dod sohiblariga, bilimning tegishli sohalari va fanning aniq yo‘nalishilari bo‘yicha o‘z tabiiy qobiliyatlarni namoyon etish va rivojlantirish, o‘zlaridagi noyob iste’dodni ro‘yobga chiqarish uchun keng imkoniyatlar yaratiladi.' %}</p>#}
-{#                                <div class="project-btn">#}
-{#                                    <a href="{% url 'main:page' 'litsey_haqida' %}" class="project-view">#}
-{#                                        {% trans 'Batafsil o`qish' %}#}
-{#                                    </a>#}
-{#                                </div><!--/.project-btn-->#}
-{#                            </div><!--/.about-us-txt-->#}
-{#                        </div><!--/.single-about-us-->#}
-{#                    </div><!--/.col-->#}
-{#                    <div class="col-sm-6">#}
-{#                        <div class="single-about-us">#}
-{#                            <div class="about-us-img">#}
-{#                                <img src="{% static 'images/about/about-part.jpg' %}" alt="about images">#}
-{#                            </div><!--/.about-us-img-->#}
-{#                        </div><!--/.single-about-us-->#}
-{#                    </div><!--/.col-->#}
-{#                </div><!--/.row-->#}
-{#            </div><!--/.about-us-content-->#}
-{#        </div><!--/.container-->#}
-{#    </section><!--/.about-us-->#}
-{#    <!--about-us end -->#}
-{##}
-{#    <!--Leadership start -->  <!-- direktor zamdirektorlar -->#}
-{#    <section class="team">#}
-{#        <div class="container">#}
-{#            <div class="team-details">#}
-{#                <div class="project-header team-header text-left">#}
-{#                    <h2>{% trans 'Rahbariyat' %}</h2>#}
-{#                    <p>#}
-{#                        {% trans 'Akademik litsey Rahbariyat xodimlari' %}#}
-{#                    </p>#}
-{#                </div><!--/.project-header-->#}
-{#                <div class="team-card">#}
-{#                    <div class="container">#}
-{#                        <div class="row">#}
-{#                            <div class="owl-carousel team-carousel">#}
-{#                                {% for director in directors %}#}
-{#                                    <div class="col-sm-3 col-xs-12">#}
-{#                                        <div class="single-team-box team-box-bg-1">#}
-{#                                            <img src="{{ director.image.url }}" alt="image"/>#}
-{#                                            <div class="team-box-inner">#}
-{#                                                <h3>{{ director.name }}</h3>#}
-{#                                                <p class="team-meta">{{ director.position }}</p>#}
-{#                                            </div><!--/.team-box-inner-->#}
-{#                                        </div><!--/.single-team-box-->#}
-{#                                    </div><!--.col-->#}
-{#                                {% endfor %}#}
-{#                            </div><!--/.team-carousel-->#}
-{#                        </div><!--/.row-->#}
-{#                    </div><!--/.container-->#}
-{#                </div><!--/.team-card-->#}
-{#            </div><!--/.team-details-->#}
-{#        </div><!--/.container-->#}
-{#    </section><!--/.team-->#}
-{#    <!--team end-->#}
-{#    <!--project start-->   <!-- Yangiliklar  -->#}
-{#    <section id="project" class="project">#}
-{#        <div class="container">#}
-{#            <div class="project-details">#}
-{#                <div class="project-header text-left">#}
-{#                    <h2>{% trans 'Yangilik va e`lonlar' %}</h2>#}
-{#                    <p>#}
-{#                        {% trans 'Akademik litseyga oid yangilik va elonlar' %}#}
-{#                    </p>#}
-{#                </div><!--/.project-header-->#}
-{#                <div class="project-content">#}
-{#                    <div class="gallery-content">#}
-{#                        <div class="isotope">#}
-{#                            <div class="row">#}
-{#                                {% for new in news %}#}
-{#                                    <div class="col-sm-12">#}
-{#                                        <div class="row">#}
-{#                                            <div class="col-sm-4">#}
-{#                                                <div class="single-news-box news-mb-20 ws-newbox">#}
-{#                                                    <div class="news-box-bg ws-new" style="height:auto">#}
-{#                                                        <img src="{{ new.image.url }}" alt="blog image">#}
-{#                                                    </div><!--/.team-box-bg-->#}
-{#                                                    <div class="news-box-inner">#}
-{#                                                        <h3>#}
-{#                                                            <a href="{% url 'main:new' new.id %}">#}
-{#                                                                {{ new.title |slice:106 }}#}
-{#                                                            </a>#}
-{#                                                        </h3>#}
-{#                                                    </div><!--/.news-box-inner-->#}
-{#                                                </div><!--/.single-news-box-->#}
-{#                                            </div>#}
-{#                                        </div><!-- /.row-->#}
-{#                                    </div><!-- /.col -->#}
-{#                                {% endfor %}#}
-{#                            </div><!-- /.row -->#}
-{#                        </div><!--/.isotope-->#}
-{#                        <a href="{% url 'main:news' %}" class="project-view">#}
-{#                            {% trans "ko'proq o'qish" %}#}
-{#                        </a>#}
-{#                    </div><!--/.gallery-content-->#}
-{#                </div><!--/.project-content-->#}
-{#            </div><!--/.project-details-->#}
-{#        </div><!--/.container-->#}
-{##}
-{#    </section><!--/.project-->#}
-{#    <!--project end-->#}
-{##}
-{#    <!--statistics start-->#}
-{#    <section class="statistics">#}
-{#        <div class="container">#}
-{#            <div class="statistics-counter ">#}
-{#                <div class="col-md-3 col-sm-6">#}
-{#                    <div class="single-ststistics-box">#}
-{#                        <div class="statistics-img">#}
-{#                            <img src="{% static 'images/counter/counter1.png' %}" alt="counter-icon"/>#}
-{#                        </div><!--/.statistics-img-->#}
-{#                        <div class="statistics-content">#}
-{#                            <div class="counter">2556</div>#}
-{#                            <h3>{% trans 'Fakultetlar' %}</h3>#}
-{#                        </div><!--/.statistics-content-->#}
-{#                    </div><!--/.single-ststistics-box-->#}
-{#                </div><!--/.col-->#}
-{#                <div class="col-md-3 col-sm-6">#}
-{#                    <div class="single-ststistics-box">#}
-{#                        <div class="statistics-img">#}
-{#                            <img src="{% static 'images/counter/counter2.png' %}" alt="counter-icon"/>#}
-{#                        </div><!--/.statistics-img-->#}
-{#                        <div class="statistics-content">#}
-{#                            <div class="counter">326</div>#}
-{#                            <h3>{% trans 'Pedagoglar' %}</h3>#}
-{#                        </div><!--/.statistics-content-->#}
-{#                    </div><!--/.single-ststistics-box-->#}
-{#                </div><!--/.col-->#}
-{#                <div class="col-md-3 col-sm-6">#}
-{#                    <div class="single-ststistics-box">#}
-{#                        <div class="statistics-img">#}
-{#                            <img src="{% static 'images/counter/counter3.png' %}" alt="counter-icon"/>#}
-{#                        </div><!--/.statistics-img-->#}
-{#                        <div class="statistics-content">#}
-{#                            <div class="counter">1526</div>#}
-{#                            <h3>{% trans "O'quvchilar" %}</h3>#}
-{#                        </div><!--/.statistics-content-->#}
-{#                    </div><!--/.single-ststistics-box-->#}
-{#                </div><!--/.col-->#}
-{#                <div class="col-md-3 col-sm-6">#}
-{#                    <div class="single-ststistics-box">#}
-{#                        <div class="statistics-img">#}
-{#                            <img src="{% static 'images/counter/counter4.png' %}" alt="counter-icon"/>#}
-{#                        </div><!--/.statistics-img-->#}
-{#                        <div class="statistics-content">#}
-{#                            <div class="counter">856</div>#}
-{#                            <h3>{% trans 'Bitiruvchilar' %}</h3>#}
-{#                        </div><!--/.statistics-content-->#}
-{#                    </div><!--/.single-ststistics-box-->#}
-{#                </div><!--/.col-->#}
-{#            </div><!--/.statistics-counter-->#}
-{#        </div><!--/.container-->#}
-{##}
-{#    </section><!--/.statistics-->#}
-{#    <!--statistics end-->#}
-{##}
-{#    <!--teachers start-->  <!-- Ustozlar -->#}
-{#    <section class="service">#}
-{#        <div class="container">#}
-{#            <div class="service-details">#}
-{#                <div class="section-header text-center">#}
-{#                    <h2 class="ws-title">{% trans 'Akademik litsey ma`muriyati' %}</h2>#}
-{#                </div><!--/.section-header-->#}
-{#                <div class="service-content-one">#}
-{#                    <div class="row">#}
-{#                        {% for teacher in teachers %}#}
-{#                            <div class="col-sm-4 col-xs-12">#}
-{#                                <div class="service-single text-center">#}
-{#                                    <div class="service-img">#}
-{#                                        <img src="{{ teacher.image.url }}"#}
-{#                                             alt="image of service"/>#}
-{#                                    </div><!--/.service-img-->#}
-{#                                    <div class="service-txt">#}
-{#                                        <h2>#}
-{#                                            <a href="{% url 'main:teacher' teacher.id %}">{{ teacher.name }}</a>#}
-{#                                        </h2>#}
-{#                                        <p>{{ teacher.position }}</p>#}
-{#                                    </div><!--/.service-txt-->#}
-{#                                </div><!--/.service-single-->#}
-{#                            </div><!--/.col-->#}
-{#                        {% endfor %}#}
-{#                        <a href="{% url 'main:teachers' %}" class="project-view">#}
-{#                            {% trans "Batafsil ko'rish" %}#}
-{#                        </a>#}
-{#                    </div><!--/.row-->#}
-{##}
-{#                </div><!--/.service-content-one-->#}
-{#            </div><!--/.service-details-->#}
-{##}
-{#        </div><!--/.container-->#}
-{#    </section><!--/.service-->#}
-{#    <!--service end-->#}
-{#    <!--team end-->#}
-{##}
