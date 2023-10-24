@@ -82,12 +82,12 @@
                     </button>
                     <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown"
                          aria-labelledby="dropdownLangButton">
-                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/uz/">
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/uz">
                             <img src="{% static 'assets/custom/images/flag/uzbek.jpg' %}" alt="england flag"
                                  class="mr-1" width="20" height="10">
                             {% trans "O'zbek" %}
                         </a>
-                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/en/">
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="/en">
                             <img src="{% static 'assets/custom/images/flag/england.png' %}" alt="england flag"
                                  class="mr-1">
                             {% trans "English" %}
@@ -103,8 +103,7 @@
             </div>
             <div class="col-12 col-sm-5 col-lg-4 text-right">
                 <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> {% trans "Telefon" %}
-                    : (888) 6000
-                    6000 - (888) 6000 6000</p>
+                    : (888) 6000 6000 - (888) 6000 6000</p>
             </div>
             <div class="col-12 col-sm-5 col-lg-3 text-right">
                 <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email:
@@ -119,10 +118,10 @@
 <!-- /End Top Header -->
 {% if messages %}
     <div class="container bg-white">
-    {% for message in messages %}
-    	<h3 class="text-primary">{{ message }}</h3>
+        {% for message in messages %}
+            <h3 class="text-primary">{{ message }}</h3>
 
-    {% endfor %}
+        {% endfor %}
     </div>
 {% endif %}
 
@@ -144,6 +143,7 @@
                     <div class="collapse navbar-collapse" id="fablesNavDropdown">
 
                         <ul class="navbar-nav mx-auto fables-nav">
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="sub-nav1" data-toggle="dropdown"
                                    aria-haspopup="true" aria-expanded="false">
@@ -152,31 +152,29 @@
                                 <ul class="dropdown-menu" aria-labelledby="sub-nav1">
                                     <li><a class="dropdown-item"
                                            href="{% url 'main:direktors' %}">{% trans "Ma'muriyat" %}</a></li>
-                                    <li><a class="dropdown-item" href="#">{% trans "Ilmiy hayot" %}</a></li>
-                                    <li><a class="dropdown-item" href="#">{% trans "Ijtimoiy hayot" %}</a></li>
+                                    <li><a class="dropdown-item"
+                                           href="{% url 'main:page' 'ilmiy-hayot' %}">{% trans "Ilmiy hayot" %}</a></li>
+                                    <li><a class="dropdown-item"
+                                           href="{% url 'main:page' 'ijtimoiy-hayot' %}">{% trans "Ijtimoiy hayot" %}</a>
+                                    </li>
                                     <li><a class="dropdown-item"
                                            href="{% url 'main:about' %}">{% trans "Litsey haqida" %}</a></li>
                                 </ul>
                             </li>
 
-
                             <li><a class="dropdown-item nav-link"
                                    href="{% url 'main:teachers' %}">{% trans "Ustozlar" %} </a></li>
+
                             <li><a class="dropdown-item nav-link"
                                    href="{% url 'main:news' %}">{% trans "Yangililar" %} </a></li>
-
 
                             <li><a class="dropdown-item nav-link"
                                    href="{% url 'main:about' %}">{% trans "Biz haqimizda" %} </a></li>
 
-
                             <li><a class="dropdown-item nav-link" href="{% url 'main:contact_us' %}">
                                 {% trans "Biz bilan bo'glanish" %}
                             </a></li>
-
-
                         </ul>
-
                     </div>
                 </nav>
             </div>
