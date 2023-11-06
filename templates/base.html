@@ -103,11 +103,11 @@
             </div>
             <div class="col-12 col-sm-5 col-lg-4 text-right">
                 <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> {% trans "Telefon" %}
-                    : (888) 6000 6000 - (888) 6000 6000</p>
+                    : <a href="tel:+998712353245" class="text-white">+998 71 235 32 45</a></p>
             </div>
             <div class="col-12 col-sm-5 col-lg-3 text-right">
-                <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email:
-                    stomalitsey@gmail.com</p>
+                <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span>
+                    {% trans "Email" %}: <a href=""></a>stomalitsey@gmail.com</p>
             </div>
 
         </div>
@@ -120,7 +120,6 @@
     <div class="container bg-white">
         {% for message in messages %}
             <h3 class="text-primary">{{ message }}</h3>
-
         {% endfor %}
     </div>
 {% endif %}
